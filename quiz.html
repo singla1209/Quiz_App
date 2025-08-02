@@ -5,37 +5,32 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: #fff;
+      background: linear-gradient(135deg, #f9f9f9, #c9e4ff);
       padding: 20px;
-      margin: 0;
     }
     #quiz-box {
       background: white;
-      color: #000;
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 700px;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 600px;
       margin: auto;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
     h1 {
       text-align: center;
-      margin-bottom: 20px;
+      color: #333;
     }
     button {
-      background-color: #2575fc;
+      margin: 5px;
+      padding: 10px 20px;
+      background: #1976d2;
       color: white;
       border: none;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
     button:hover {
-      background-color: #6a11cb;
+      background: #004ba0;
     }
   </style>
 </head>
@@ -53,6 +48,7 @@
     let current = 0;
     let score = 0;
 
+    // ✅ Load JSON from your GitHub
     fetch('https://singla1209.github.io/Quiz_App/questions.json')
       .then(response => {
         if (!response.ok) {
@@ -73,7 +69,8 @@
       if (current >= questions.length) {
         document.getElementById("quiz-box").innerHTML = `
           <h2>Quiz Complete</h2>
-          <p>Your Score: ${score}/${questions.length}</p>`;
+          <p>Score: ${score} / ${questions.length}</p>
+        `;
         return;
       }
 

@@ -48,11 +48,16 @@
       });
 
     function startQuiz() {
-      username = document.getElementById("username").value.trim();
+      const nameInput = document.getElementById("username").value.trim();
+      if (nameInput) {
+        username = nameInput;
+      }
+
       if (!username) {
         alert("Please enter your name");
         return;
       }
+
       current = 0;
       score = 0;
       document.getElementById("home").style.display = "none";
@@ -98,13 +103,24 @@
       document.getElementById("result").innerHTML = `
         <h2>Quiz Complete!</h2>
         <p><strong>${username}</strong>, your score is ${score}/${questions.length}</p>
+        <button onclick="playAgain()">Play Again</button>
         <button onclick="goHome()">Go to Home</button>
       `;
+    }
+
+    function playAgain() {
+      current = 0;
+      score = 0;
+      document.getElementById("result").style.display = "none";
+      document.getElementById("quiz").style.display = "block";
+      showQuestion();
     }
 
     function goHome() {
       document.getElementById("result").style.display = "none";
       document.getElementById("home").style.display = "block";
+      document.getElementById("username").value = ""; // clear input
+      username = ""; // clear stored name
     }
   </script>
 </body>

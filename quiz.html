@@ -23,6 +23,21 @@
     let score = 0;
     
 fetch('https://singla1209.github.io/Quiz_App/questions.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  })
+  .then(data => {
+    questions = data;
+    loadQuestion();
+  })
+  .catch(error => {
+    console.error("Error loading questions:", error);
+    alert("Error loading questions.");
+  });
+
 
    
       .then(res => res.json())
@@ -61,6 +76,7 @@ fetch('https://singla1209.github.io/Quiz_App/questions.json')
   </script>
 </body>
 </html>
+
 
 
 

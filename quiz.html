@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <style>
+    body { font-family: Arial; background: #eef; padding: 20px; }
+    #quiz-box { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; }
+    button { margin: 5px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <div id="quiz-box">
+    <h1>Quiz App</h1>
+    <div id="question"></div>
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Next</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    let questions = [];
+    let current = 0;
+    let score = 0;
+
+    fetch("https://your-username.github.io/your-repo/questions.json")
+      .then(res => res.json())
+      .then(data => {
+        questions = data;
+        showQuestion();
+      })
+      .catch(err => {
+        document.getElementById("quiz-box").innerHTML = "Error loading questions.";
+      });
+
+    function showQuestion() {
+      if (current >= questions.length) {
+        document.getElementById("quiz-box").innerHTML = `<h2>Quiz Complete</h2><p>Score: ${score}/${questions.length}</p>`;
+        return;
+      }
+
+      const q = questions[current];
+      document.getElementById("question").innerHTML = `<h3>${q.question}</h3>`;
+      const options = Object.entries(q.options).map(([key, val]) => {
+        return `<button onclick="checkAnswer('${key}')">${key}: ${val}</button>`;
+      }).join("");
+      document.getElementById("options").innerHTML = options;
+    }
+
+    function checkAnswer(selected) {
+      if (selected === questions[current].correct) score++;
+      current++;
+      showQuestion();
+    }
+
+    function nextQuestion() {
+      current++;
+      showQuestion();
+    }
+  </script>
+</body>
+</html>

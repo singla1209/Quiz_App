@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App - Main Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎯 Welcome to the Quiz App</h1>
+
+    <div class="buttons">
+      <button onclick="startQuiz()">Start Quiz</button>
+      <button onclick="openAdmin()">Admin Panel</button>
+      <button onclick="openLeaderboard()">Leaderboard</button>
+      <button onclick="exitApp()">Exit</button>
+    </div>
+
+    <div class="footer">
+      Developed by: Arvind Singla
+    </div>
+
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+  </div>
+
+  <script>
+    function startQuiz() {
+      window.location.href = 'quiz.html';
+    }
+
+    function openAdmin() {
+      const pass = prompt("Enter admin password:");
+      if (pass === "admin123") {
+        window.location.href = 'admin.html';
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+
+    function openLeaderboard() {
+      window.location.href = 'leaderboard.html';
+    }
+
+    function exitApp() {
+      alert("Thanks for using the Quiz App!");
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>

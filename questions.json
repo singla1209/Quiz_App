@@ -1,0 +1,32 @@
+[
+  {
+    "question": "what is the captial of Punjanb.",
+    "options": {
+      "A": "Patiala",
+      "B": "Chandigarh",
+      "C": "Jalandhar",
+      "D": "Mansa"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": {
+      "A": "Mars",
+      "B": "Earth",
+      "C": "Jupiter",
+      "D": "Venus"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which language is used to create Android apps?",
+    "options": {
+      "A": "Python",
+      "B": "c++",
+      "C": "Kotlin",
+      "D": "Java"
+    },
+    "correct": "D"
+  }
+]

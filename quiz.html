@@ -3,9 +3,40 @@
 <head>
   <title>Quiz App</title>
   <style>
-    body { font-family: Arial; background: #eef; padding: 20px; }
-    #quiz-box { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; }
-    button { margin: 5px; padding: 10px 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 20px;
+      margin: 0;
+    }
+    #quiz-box {
+      background: white;
+      color: #000;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #2575fc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #6a11cb;
+    }
   </style>
 </head>
 <body>
@@ -31,7 +62,7 @@
       })
       .then(data => {
         questions = data;
-        showQuestion();  // ✅ call correct function
+        showQuestion();
       })
       .catch(error => {
         console.error("Error loading questions:", error);
@@ -40,20 +71,24 @@
 
     function showQuestion() {
       if (current >= questions.length) {
-        document.getElementById("quiz-box").innerHTML = `<h2>Quiz Complete</h2><p>Score: ${score}/${questions.length}</p>`;
+        document.getElementById("quiz-box").innerHTML = `
+          <h2>Quiz Complete</h2>
+          <p>Your Score: ${score}/${questions.length}</p>`;
         return;
       }
 
       const q = questions[current];
       document.getElementById("question").innerHTML = `<h3>${q.question}</h3>`;
-      const options = Object.entries(q.options).map(([key, val]) => {
+      const optionsHTML = Object.entries(q.options).map(([key, val]) => {
         return `<button onclick="checkAnswer('${key}')">${key}: ${val}</button>`;
       }).join("");
-      document.getElementById("options").innerHTML = options;
+      document.getElementById("options").innerHTML = optionsHTML;
     }
 
     function checkAnswer(selected) {
-      if (selected === questions[current].correct) score++;
+      if (selected === questions[current].correct) {
+        score++;
+      }
       current++;
       showQuestion();
     }

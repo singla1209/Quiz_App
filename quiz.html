@@ -3,50 +3,26 @@
 <head>
   <title>Quiz App</title>
   <style>
-    body {
-      font-family: Arial;
-      background: #eef;
-      padding: 20px;
-    }
-    #quiz-box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-      text-align: center;
-    }
-    button {
-      margin: 5px;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    #start-screen {
-      text-align: center;
-      margin-top: 100px;
-    }
-    input {
-      padding: 10px;
-      margin: 10px;
-      width: 80%;
-    }
+    body { font-family: Arial; background: #eef; padding: 20px; text-align: center; }
+    #quiz-box { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; }
+    button { margin: 5px; padding: 10px 20px; cursor: pointer; }
+    #home, #quiz, #result { display: none; }
   </style>
 </head>
 <body>
+  <div id="quiz-box">
+    <div id="home">
+      <h2>Welcome to the Quiz App</h2>
+      <input type="text" id="username" placeholder="Enter your name" /><br><br>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
 
-  <!-- Start Screen -->
-  <div id="start-screen">
-    <h1>Welcome to the Quiz</h1>
-    <input type="text" id="username" placeholder="Enter your name" /><br/>
-    <button onclick="startQuiz()">Start Quiz</button>
-  </div>
+    <div id="quiz">
+      <h3 id="question"></h3>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
 
-  <!-- Quiz Screen -->
-  <div id="quiz-box" style="display: none;">
-    <h2 id="user-label"></h2>
-    <div id="question"></div>
-    <div id="options"></div>
-    <button onclick="nextQuestion()">Next</button>
     <div id="result"></div>
   </div>
 
@@ -56,16 +32,15 @@
     let score = 0;
     let username = "";
 
-    // Fetch questions
+    // Load questions from GitHub
     fetch('https://singla1209.github.io/Quiz_App/questions.json')
       .then(response => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
+        if (!response.ok) throw new Error("Network error");
         return response.json();
       })
       .then(data => {
         questions = data;
+        document.getElementById("home").style.display = "block";
       })
       .catch(error => {
         console.error("Error loading questions:", error);
@@ -74,33 +49,34 @@
 
     function startQuiz() {
       username = document.getElementById("username").value.trim();
-      if (username === "") {
-        alert("Please enter your name.");
+      if (!username) {
+        alert("Please enter your name");
         return;
       }
-
-      document.getElementById("start-screen").style.display = "none";
-      document.getElementById("quiz-box").style.display = "block";
-      document.getElementById("user-label").textContent = "Hello, " + username + "!";
+      current = 0;
+      score = 0;
+      document.getElementById("home").style.display = "none";
+      document.getElementById("result").style.display = "none";
+      document.getElementById("quiz").style.display = "block";
       showQuestion();
     }
 
     function showQuestion() {
       if (current >= questions.length) {
-        document.getElementById("quiz-box").innerHTML = `
-          <h2>Quiz Complete</h2>
-          <p>${username}, your score is ${score}/${questions.length}</p>
-          <button onclick="goHome()">Go to Home</button>
-        `;
+        showResult();
         return;
       }
 
       const q = questions[current];
-      document.getElementById("question").innerHTML = `<h3>${q.question}</h3>`;
-      const options = Object.entries(q.options).map(([key, val]) => {
-        return `<button onclick="checkAnswer('${key}')">${key}: ${val}</button>`;
-      }).join("");
-      document.getElementById("options").innerHTML = options;
+      document.getElementById("question").innerText = q.question;
+      document.getElementById("options").innerHTML = "";
+
+      for (const key in q.options) {
+        const btn = document.createElement("button");
+        btn.innerText = `${key}: ${q.options[key]}`;
+        btn.onclick = () => checkAnswer(key);
+        document.getElementById("options").appendChild(btn);
+      }
     }
 
     function checkAnswer(selected) {
@@ -116,8 +92,19 @@
       showQuestion();
     }
 
+    function showResult() {
+      document.getElementById("quiz").style.display = "none";
+      document.getElementById("result").style.display = "block";
+      document.getElementById("result").innerHTML = `
+        <h2>Quiz Complete!</h2>
+        <p><strong>${username}</strong>, your score is ${score}/${questions.length}</p>
+        <button onclick="goHome()">Go to Home</button>
+      `;
+    }
+
     function goHome() {
-      location.reload(); // reloads page to show start screen
+      document.getElementById("result").style.display = "none";
+      document.getElementById("home").style.display = "block";
     }
   </script>
 </body>

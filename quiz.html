@@ -4,39 +4,46 @@
   <title>Quiz App</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f9f9f9, #c9e4ff);
+      font-family: Arial;
+      background: #eef;
       padding: 20px;
     }
     #quiz-box {
       background: white;
       padding: 20px;
-      border-radius: 12px;
+      border-radius: 10px;
       max-width: 600px;
       margin: auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-    h1 {
       text-align: center;
-      color: #333;
     }
     button {
       margin: 5px;
       padding: 10px 20px;
-      background: #1976d2;
-      color: white;
-      border: none;
-      border-radius: 6px;
       cursor: pointer;
     }
-    button:hover {
-      background: #004ba0;
+    #start-screen {
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
     }
   </style>
 </head>
 <body>
-  <div id="quiz-box">
-    <h1>Quiz App</h1>
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h1>Welcome to the Quiz</h1>
+    <input type="text" id="username" placeholder="Enter your name" /><br/>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-box" style="display: none;">
+    <h2 id="user-label"></h2>
     <div id="question"></div>
     <div id="options"></div>
     <button onclick="nextQuestion()">Next</button>
@@ -47,8 +54,9 @@
     let questions = [];
     let current = 0;
     let score = 0;
+    let username = "";
 
-    // ✅ Load JSON from your GitHub
+    // Fetch questions
     fetch('https://singla1209.github.io/Quiz_App/questions.json')
       .then(response => {
         if (!response.ok) {
@@ -58,28 +66,41 @@
       })
       .then(data => {
         questions = data;
-        showQuestion();
       })
       .catch(error => {
         console.error("Error loading questions:", error);
         alert("Error loading questions.");
       });
 
+    function startQuiz() {
+      username = document.getElementById("username").value.trim();
+      if (username === "") {
+        alert("Please enter your name.");
+        return;
+      }
+
+      document.getElementById("start-screen").style.display = "none";
+      document.getElementById("quiz-box").style.display = "block";
+      document.getElementById("user-label").textContent = "Hello, " + username + "!";
+      showQuestion();
+    }
+
     function showQuestion() {
       if (current >= questions.length) {
         document.getElementById("quiz-box").innerHTML = `
           <h2>Quiz Complete</h2>
-          <p>Score: ${score} / ${questions.length}</p>
+          <p>${username}, your score is ${score}/${questions.length}</p>
+          <button onclick="goHome()">Go to Home</button>
         `;
         return;
       }
 
       const q = questions[current];
       document.getElementById("question").innerHTML = `<h3>${q.question}</h3>`;
-      const optionsHTML = Object.entries(q.options).map(([key, val]) => {
+      const options = Object.entries(q.options).map(([key, val]) => {
         return `<button onclick="checkAnswer('${key}')">${key}: ${val}</button>`;
       }).join("");
-      document.getElementById("options").innerHTML = optionsHTML;
+      document.getElementById("options").innerHTML = options;
     }
 
     function checkAnswer(selected) {
@@ -93,6 +114,10 @@
     function nextQuestion() {
       current++;
       showQuestion();
+    }
+
+    function goHome() {
+      location.reload(); // reloads page to show start screen
     }
   </script>
 </body>

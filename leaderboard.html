@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Leaderboard</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #d3cce3, #e9e4f0);
-      text-align: center;
-      padding: 50px;
+      background: #f5f5f5;
+      padding: 30px;
     }
-    h1 {
-      color: #333;
-    }
-    ol {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
       background: white;
-      padding: 20px;
-      margin: 0 auto;
-      display: inline-block;
-      text-align: left;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    li {
-      margin: 10px 0;
-      font-size: 18px;
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
     }
+    th {
+      background: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) { background-color: #f2f2f2; }
     button {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4CAF50;
+      padding: 8px 16px;
+      margin-top: 15px;
+      background: red;
       color: white;
       border: none;
-      border-radius: 8px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #45a049;
+      background: darkred;
     }
   </style>
 </head>
 <body>
-  <h1>Top 5 Performers</h1>
-  <ol id="scoreList"></ol>
-  <button onclick="goHome()">Back to Home</button>
+  <h2>Leaderboard</h2>
+  <table id="leaderboard-table">
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Total</th>
+      <th>Time Taken</th>
+      <th>Submitted At</th>
+      <th>Details</th>
+    </tr>
+  </table>
+
+  <button onclick="resetLeaderboard()">Reset Leaderboard</button>
 
   <script>
-    function loadScores() {
-      let scores = JSON.parse(localStorage.getItem("quizScores") || "[]");
-      const list = document.getElementById("scoreList");
-      list.innerHTML = "";
-      scores.slice(0, 5).forEach(s => {
-        const li = document.createElement("li");
-        li.textContent = `${s.name} - ${s.score}`;
-        list.appendChild(li);
+    const leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
+    const submissions = JSON.parse(localStorage.getItem("submissions")) || [];
+
+    leaderboard.forEach((entry, index) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${entry.name}</td>
+        <td>${entry.score}/${entry.total}</td>
+        <td>${entry.total}</td>
+        <td>${entry.timeTaken}</td>
+        <td>${entry.timestamp}</td>
+        <td><a href="#" onclick="showDetails(${index})">View</a></td>
+      `;
+      document.getElementById("leaderboard-table").appendChild(row);
+    });
+
+    function showDetails(index) {
+      const detail = submissions[index];
+      let text = `Name: ${detail.name}\nTime: ${detail.timestamp}\nTime Taken: ${detail.timeTaken}\nScore: ${detail.score}/${detail.total}\n\n`;
+      detail.answers.forEach((ans, i) => {
+        text += `Q${i + 1}: ${ans.question}\nSelected: ${ans.selected}\nCorrect: ${ans.correct}\n\n`;
       });
+      alert(text);
     }
 
-    function goHome() {
-      window.location.href = "index.html";
+    function resetLeaderboard() {
+      if (confirm("Are you sure you want to clear all leaderboard data?")) {
+        localStorage.removeItem("leaderboard");
+        localStorage.removeItem("submissions");
+        location.reload();
+      }
     }
-
-    loadScores();
   </script>
 </body>
 </html>

@@ -1,102 +1,252 @@
 [
   {
-    "question": "Which acid is commonly used in car batteries and is also known as oil of vitriol?",
+    "question": "Which of the following processes does NOT require oxygen in human beings?",
     "options": {
-      "A": "Nitric acid",
-      "B": "Hydrochloric acid",
-      "C": "Sulphuric acid",
-      "D": "Acetic acid"
+      "A": "Aerobic respiration",
+      "B": "Electron transport chain",
+      "C": "Glycolysis",
+      "D": "Krebs cycle"
     },
     "correct": "C"
   },
   {
-    "question": "Which of the following substances can act as both an acid and a base (amphoteric)?",
+    "question": "The primary site of photosynthesis in a leaf is the:",
     "options": {
-      "A": "NaOH",
-      "B": "HCl",
-      "C": "H\u2082O",
-      "D": "NaCl"
+      "A": "Upper epidermis",
+      "B": "Spongy parenchyma",
+      "C": "Palisade mesophyll",
+      "D": "Lower epidermis"
     },
     "correct": "C"
   },
   {
-    "question": "A solution turns phenolphthalein pink. Which of the following could be the solution?",
+    "question": "Which enzyme initiates the digestion of starch in the human mouth?",
     "options": {
-      "A": "Dilute HCl",
-      "B": "Lemon juice",
-      "C": "Sodium hydroxide",
-      "D": "Vinegar"
-    },
-    "correct": "C"
-  },
-  {
-    "question": "Which of the following salts is used for making baking powder?",
-    "options": {
-      "A": "Sodium carbonate",
-      "B": "Sodium bicarbonate",
-      "C": "Ammonium chloride",
-      "D": "Potassium nitrate"
+      "A": "Trypsin",
+      "B": "Amylase",
+      "C": "Lipase",
+      "D": "Pepsin"
     },
     "correct": "B"
   },
   {
-    "question": "What is formed when carbon dioxide is passed through lime water for a long time?",
+    "question": "Which of the following blood vessels has the thickest wall?",
     "options": {
-      "A": "Calcium hydroxide",
-      "B": "Calcium carbonate",
-      "C": "Calcium bicarbonate",
-      "D": "Calcium oxide"
+      "A": "Vein",
+      "B": "Capillary",
+      "C": "Artery",
+      "D": "Venule"
     },
     "correct": "C"
   },
   {
-    "question": "Which of these is not a property of a base?",
+    "question": "In plants, exchange of gases takes place through:",
     "options": {
-      "A": "Turns red litmus blue",
-      "B": "Has a bitter taste",
-      "C": "Reacts with metals to give hydrogen",
-      "D": "Feels soapy to touch"
+      "A": "Stomata",
+      "B": "Cuticle",
+      "C": "Lenticels",
+      "D": "Both A and C"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which pigment is responsible for trapping light energy in photosynthesis?",
+    "options": {
+      "A": "Carotene",
+      "B": "Chlorophyll",
+      "C": "Xanthophyll",
+      "D": "Anthocyanin"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is NOT part of the human respiratory system?",
+    "options": {
+      "A": "Alveoli",
+      "B": "Trachea",
+      "C": "Nephrons",
+      "D": "Bronchi"
     },
     "correct": "C"
   },
   {
-    "question": "Which of the following is a weak base?",
+    "question": "The main function of bile is to:",
     "options": {
-      "A": "NaOH",
-      "B": "KOH",
-      "C": "NH\u2084OH",
-      "D": "Ca(OH)\u2082"
+      "A": "Digest proteins",
+      "B": "Emulsify fats",
+      "C": "Neutralize stomach acid",
+      "D": "Digest carbohydrates"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which structure in the nephron is responsible for filtration?",
+    "options": {
+      "A": "Loop of Henle",
+      "B": "Bowman\u2019s capsule",
+      "C": "Collecting duct",
+      "D": "Renal pelvis"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The correct sequence of parts in the human alimentary canal is:",
+    "options": {
+      "A": "Mouth \u2192 Stomach \u2192 Esophagus \u2192 Small intestine",
+      "B": "Mouth \u2192 Esophagus \u2192 Stomach \u2192 Small intestine",
+      "C": "Mouth \u2192 Small intestine \u2192 Stomach \u2192 Esophagus",
+      "D": "Esophagus \u2192 Mouth \u2192 Stomach \u2192 Large intestine"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which organ in the human body is responsible for detoxification?",
+    "options": {
+      "A": "Heart",
+      "B": "Kidney",
+      "C": "Liver",
+      "D": "Lung"
     },
     "correct": "C"
   },
   {
-    "question": "Plaster of Paris should be stored in a moisture-proof container because:",
+    "question": "Which part of the chloroplast is responsible for the light reactions?",
     "options": {
-      "A": "It is highly reactive with metals",
-      "B": "It sets into a hard mass in the presence of moisture",
-      "C": "It releases harmful gases",
-      "D": "It loses its color in air"
+      "A": "Stroma",
+      "B": "Grana",
+      "C": "Outer membrane",
+      "D": "Inner membrane"
     },
     "correct": "B"
   },
   {
-    "question": "Which of the following is used in antacids to relieve acidity in the stomach?",
+    "question": "Which molecule acts as the final electron acceptor in aerobic respiration?",
     "options": {
-      "A": "Sodium chloride",
-      "B": "Sodium bicarbonate",
-      "C": "Sodium carbonate",
-      "D": "Potassium chloride"
+      "A": "Carbon dioxide",
+      "B": "ATP",
+      "C": "Oxygen",
+      "D": "Water"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "In humans, oxygenated and deoxygenated blood are separated by:",
+    "options": {
+      "A": "Lungs",
+      "B": "Heart",
+      "C": "Diaphragm",
+      "D": "Kidney"
     },
     "correct": "B"
   },
   {
-    "question": "What is the pH value of a neutral solution at 25\u00b0C?",
+    "question": "Which of these is NOT a product of anaerobic respiration in yeast?",
     "options": {
-      "A": "0",
-      "B": "7",
-      "C": "14",
-      "D": "1"
+      "A": "Ethanol",
+      "B": "Carbon dioxide",
+      "C": "Water",
+      "D": "ATP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which among the following is the smallest functional unit of kidney?",
+    "options": {
+      "A": "Neuron",
+      "B": "Alveoli",
+      "C": "Nephron",
+      "D": "Glomerulus"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which hormone regulates the glucose level in the blood?",
+    "options": {
+      "A": "Insulin",
+      "B": "Thyroxine",
+      "C": "Adrenaline",
+      "D": "Testosterone"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The process of removal of nitrogenous waste from the body is called:",
+    "options": {
+      "A": "Respiration",
+      "B": "Excretion",
+      "C": "Transpiration",
+      "D": "Digestion"
     },
     "correct": "B"
+  },
+  {
+    "question": "Which blood component helps in clotting?",
+    "options": {
+      "A": "Plasma",
+      "B": "RBC",
+      "C": "WBC",
+      "D": "Platelets"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "The valve present between left atrium and left ventricle is:",
+    "options": {
+      "A": "Tricuspid valve",
+      "B": "Pulmonary valve",
+      "C": "Mitral valve",
+      "D": "Aortic valve"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "During photosynthesis, the oxygen is released from:",
+    "options": {
+      "A": "Carbon dioxide",
+      "B": "Chlorophyll",
+      "C": "Water",
+      "D": "Glucose"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which part of the brain controls the involuntary actions like heartbeat and breathing?",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Cerebellum",
+      "C": "Medulla",
+      "D": "Hypothalamus"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The inner lining of small intestine has numerous finger-like projections called:",
+    "options": {
+      "A": "Alveoli",
+      "B": "Villi",
+      "C": "Nephrons",
+      "D": "Cilia"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is the correct equation for photosynthesis?",
+    "options": {
+      "A": "6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082",
+      "B": "C\u2086H\u2081\u2082O\u2086 + 6O\u2082 \u2192 6CO\u2082 + 6H\u2082O",
+      "C": "O\u2082 + C\u2086H\u2081\u2082O\u2086 \u2192 CO\u2082 + H\u2082O",
+      "D": "CO\u2082 + O\u2082 \u2192 C\u2086H\u2081\u2082O\u2086"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "What is the main nitrogenous waste excreted in human urine?",
+    "options": {
+      "A": "Ammonia",
+      "B": "Uric acid",
+      "C": "Urea",
+      "D": "Creatinine"
+    },
+    "correct": "C"
   }
 ]

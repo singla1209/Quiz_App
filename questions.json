@@ -1,32 +1,152 @@
 [
   {
-    "question": "what is the captial of Punjanb.",
-    "options": {
-      "A": "Patiala",
-      "B": "Chandigarh",
-      "C": "Jalandhar",
-      "D": "Mansa"
-    },
-    "correct": "B"
+    "question": "Which of the following is a displacement reaction?",
+    "options": [
+      "Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu",
+      "2Mg + O\u2082 \u2192 2MgO",
+      "CaCO\u2083 \u2192 CaO + CO\u2082",
+      "HCl + NaOH \u2192 NaCl + H\u2082O"
+    ],
+    "answer": "Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu"
   },
   {
-    "question": "Which planet is known as the Red Planet?",
-    "options": {
-      "A": "Mars",
-      "B": "Earth",
-      "C": "Jupiter",
-      "D": "Venus"
-    },
-    "correct": "A"
+    "question": "The chemical reaction between hydrogen and oxygen to form water is an example of:",
+    "options": [
+      "Decomposition",
+      "Combination",
+      "Displacement",
+      "Double displacement"
+    ],
+    "answer": "Combination"
   },
   {
-    "question": "Which language is used to create Android apps?",
-    "options": {
-      "A": "Python",
-      "B": "c++",
-      "C": "Kotlin",
-      "D": "Java"
-    },
-    "correct": "D"
+    "question": "Which one of the following processes involves a chemical reaction?",
+    "options": [
+      "Melting of ice",
+      "Dissolution of salt in water",
+      "Rusting of iron",
+      "Boiling of water"
+    ],
+    "answer": "Rusting of iron"
+  },
+  {
+    "question": "What is the color change observed when ferrous sulfate is heated?",
+    "options": [
+      "Green to red",
+      "Green to brown",
+      "Green to white",
+      "Green to yellow"
+    ],
+    "answer": "Green to brown"
+  },
+  {
+    "question": "Which of the following is an example of a photochemical reaction?",
+    "options": [
+      "Decomposition of CaCO\u2083",
+      "Reaction of Na with H\u2082O",
+      "Photosynthesis",
+      "Rusting of iron"
+    ],
+    "answer": "Photosynthesis"
+  },
+  {
+    "question": "The reaction: AgNO\u2083 + NaCl \u2192 AgCl + NaNO\u2083 is an example of:",
+    "options": [
+      "Combination reaction",
+      "Displacement reaction",
+      "Double displacement reaction",
+      "Decomposition reaction"
+    ],
+    "answer": "Double displacement reaction"
+  },
+  {
+    "question": "Which of the following gas is evolved when zinc reacts with hydrochloric acid?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Chlorine",
+      "Carbon dioxide"
+    ],
+    "answer": "Hydrogen"
+  },
+  {
+    "question": "The brown-colored gas evolved on heating lead nitrate is:",
+    "options": [
+      "NO\u2082",
+      "N\u2082O",
+      "NO",
+      "N\u2082"
+    ],
+    "answer": "NO\u2082"
+  },
+  {
+    "question": "Which of the following is a balanced chemical equation?",
+    "options": [
+      "H\u2082 + O\u2082 \u2192 H\u2082O",
+      "2H\u2082 + O\u2082 \u2192 2H\u2082O",
+      "H\u2082 + Cl\u2082 \u2192 HCl",
+      "2Mg + O\u2082 \u2192 MgO"
+    ],
+    "answer": "2H\u2082 + O\u2082 \u2192 2H\u2082O"
+  },
+  {
+    "question": "What type of chemical reaction takes place when quicklime reacts with water?",
+    "options": [
+      "Endothermic",
+      "Exothermic",
+      "Displacement",
+      "Neutralization"
+    ],
+    "answer": "Exothermic"
+  },
+  {
+    "question": "Which of these is not a physical change?",
+    "options": [
+      "Melting of wax",
+      "Cutting of paper",
+      "Boiling of water",
+      "Burning of wood"
+    ],
+    "answer": "Burning of wood"
+  },
+  {
+    "question": "A student adds dilute HCl to zinc granules and observes bubbles. The correct inference is:",
+    "options": [
+      "A gas is released",
+      "A solid is formed",
+      "Temperature decreases",
+      "No reaction occurs"
+    ],
+    "answer": "A gas is released"
+  },
+  {
+    "question": "Which of the following reactions is used in black and white photography?",
+    "options": [
+      "Decomposition",
+      "Neutralization",
+      "Precipitation",
+      "Combination"
+    ],
+    "answer": "Decomposition"
+  },
+  {
+    "question": "The reaction 2FeSO\u2084 \u2192 Fe\u2082O\u2083 + SO\u2082 + SO\u2083 is a:",
+    "options": [
+      "Combination",
+      "Displacement",
+      "Decomposition",
+      "Double displacement"
+    ],
+    "answer": "Decomposition"
+  },
+  {
+    "question": "In redox reactions:",
+    "options": [
+      "Only oxidation occurs",
+      "Only reduction occurs",
+      "Oxidation and reduction occur simultaneously",
+      "No electrons are transferred"
+    ],
+    "answer": "Oxidation and reduction occur simultaneously"
   }
 ]

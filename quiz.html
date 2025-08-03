@@ -37,6 +37,10 @@
       background-color: #2196F3;
     }
     .hide { display: none; }
+    ol {
+      text-align: left;
+      margin-left: 50px;
+    }
   </style>
 </head>
 <body>
@@ -136,13 +140,32 @@
       document.getElementById("end-screen").classList.remove("hide");
       document.getElementById("score-text").innerText =
         `${username}, your score is ${score}/${questions.length}`;
+      saveScore();
+      showLeaderboard();
+    }
+
+    function saveScore() {
+      let scores = JSON.parse(localStorage.getItem("quizScores") || "[]");
+      scores.push({ name: username, score: score });
+      scores.sort((a, b) => b.score - a.score);
+      localStorage.setItem("quizScores", JSON.stringify(scores));
+    }
+
+    function showLeaderboard() {
+      let scores = JSON.parse(localStorage.getItem("quizScores") || "[]");
+      if (scores.length === 0) return;
+      let list = "<h3>Top Performers</h3><ol>";
+      scores.slice(0, 5).forEach(s => {
+        list += `<li>${s.name} - ${s.score}</li>`;
+      });
+      list += "</ol>";
+      document.getElementById("score-text").innerHTML += "<br><br>" + list;
     }
 
     function playAgain() {
-       document.getElementById("end-screen").classList.add("hide");
+      document.getElementById("end-screen").classList.add("hide");
       document.getElementById("welcome-screen").classList.remove("hide");
       document.getElementById("username").value = "";
-
     }
 
     function goHome() {

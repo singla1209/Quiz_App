@@ -12,9 +12,7 @@
 
     <div class="buttons">
       <button onclick="startQuiz()">Start Quiz</button>
-      <button onclick="openAdmin()">Admin Panel</button>
       <button onclick="openLeaderboard()">Leaderboard</button>
-      <button onclick="exitApp()">Exit</button>
     </div>
 
     <div class="footer">
@@ -29,22 +27,10 @@
       window.location.href = 'quiz.html';
     }
 
-    function openAdmin() {
-      const pass = prompt("Enter admin password:");
-      if (pass === "admin123") {
-        window.location.href = 'admin.html';
-      } else {
-        alert("Incorrect password.");
-      }
-    }
-
     function openLeaderboard() {
       window.location.href = 'leaderboard.html';
     }
 
-    function exitApp() {
-      alert("Thanks for using the Quiz App!");
-    }
 
     function toggleDarkMode() {
       document.body.classList.toggle('dark');

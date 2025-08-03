@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   justify-content: center;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .title {
@@ -24,16 +25,24 @@ body {
   text-align: center;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
 .buttons button {
   padding: 15px 30px;
   font-size: 1.1em;
-  margin: 10px;
   border: none;
   border-radius: 12px;
   background-color: #ffffffcc;
   cursor: pointer;
   transition: 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .buttons button:hover {
@@ -85,4 +94,28 @@ body {
 .dark .dark-toggle {
   background-color: #444;
   color: #fff;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6em;
+  }
+
+  .buttons button {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+
+  .footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .dark-toggle {
+    bottom: 15px;
+    left: 15px;
+    font-size: 1em;
+  }
 }

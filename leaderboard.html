@@ -1,113 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Leaderboard</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    table {
-      width: 90%;
-      max-width: 800px;
-      margin-top: 20px;
-      border-collapse: collapse;
-      background-color: #fff;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #d3cce3, #e9e4f0);
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    ol {
+      background: white;
+      padding: 20px;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-
-    th, td {
-      padding: 12px;
-      text-align: center;
-      border-bottom: 1px solid #ccc;
+    li {
+      margin: 10px 0;
+      font-size: 18px;
     }
-
-    th {
-      background-color: #004488;
-      color: #fff;
-    }
-
-    tr:hover {
-      background-color: #f2f2f2;
-    }
-
-    .dark table {
-      background-color: #222;
-      color: #eee;
-    }
-
-    .dark th {
-      background-color: #333;
-    }
-
-    .dark tr:hover {
-      background-color: #444;
-    }
-
-    .back-button {
+    button {
       margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">🏆 Leaderboard</h1>
-
-    <table id="leaderboard">
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Name</th>
-          <th>E-Punjab ID</th>
-          <th>Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Rows will be inserted dynamically -->
-      </tbody>
-    </table>
-
-    <div class="back-button">
-      <button onclick="goBack()">🔙 Back to Home</button>
-    </div>
-
-    <div class="footer">Developed by: Arvind Singla</div>
-    <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
-  </div>
+  <h1>Top 5 Performers</h1>
+  <ol id="scoreList"></ol>
+  <button onclick="goHome()">Back to Home</button>
 
   <script>
-    async function loadLeaderboard() {
-      try {
-        const response = await fetch('results.json');
-        const data = await response.json();
-
-        data.sort((a, b) => b.score - a.score);
-
-        const tbody = document.querySelector('#leaderboard tbody');
-        data.forEach((item, index) => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td>${index + 1}</td>
-            <td>${item.name}</td>
-            <td>${item.epunjab_id}</td>
-            <td>${item.score}</td>
-          `;
-          tbody.appendChild(row);
-        });
-      } catch (error) {
-        alert('Failed to load leaderboard. Make sure results.json is accessible.');
-        console.error(error);
-      }
+    function loadScores() {
+      let scores = JSON.parse(localStorage.getItem("quizScores") || "[]");
+      const list = document.getElementById("scoreList");
+      list.innerHTML = "";
+      scores.slice(0, 5).forEach(s => {
+        const li = document.createElement("li");
+        li.textContent = `${s.name} - ${s.score}`;
+        list.appendChild(li);
+      });
     }
 
-    function goBack() {
-      window.location.href = 'index.html';
+    function goHome() {
+      window.location.href = "index.html";
     }
 
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-
-    loadLeaderboard();
+    loadScores();
   </script>
 </body>
 </html>

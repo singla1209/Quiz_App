@@ -1,169 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Quiz App</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      background: linear-gradient(to right, #74ebd5, #9face6);
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
-
-    #app {
-      background: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      width: 90%;
+    .container {
       max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
       text-align: center;
     }
-
-    h1, h2 {
-      margin-bottom: 20px;
-    }
-
+    h1 { color: #333; }
     button {
-      padding: 12px 24px;
+      padding: 10px 20px;
       margin: 10px;
-      font-size: 16px;
       border: none;
-      border-radius: 8px;
-      background-color: #007BFF;
+      background: #4CAF50;
       color: white;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
+    button:hover { background: #45a049; }
     .option-btn {
       display: block;
-      width: 100%;
-      margin: 10px 0;
+      margin: 10px auto;
+      width: 80%;
+      background-color: #2196F3;
     }
-
-    .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #666;
-    }
-
+    .hide { display: none; }
   </style>
 </head>
 <body>
-
-<div id="app">
-  <div id="welcome-screen">
-    <h1>Welcome to the Quiz</h1>
-    <input type="text" id="nameInput" placeholder="Enter your name" style="padding:10px; width:80%; margin-bottom:20px;" />
-    <br>
+  <div class="container" id="welcome-screen">
+    <h1>Welcome to the Quiz!</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <br><br>
     <button onclick="startQuiz()">Start Quiz</button>
   </div>
 
-  <div id="quiz-screen" style="display:none;">
-    <h2 id="userName"></h2>
-    <div id="question"></div>
+  <div class="container hide" id="quiz-screen">
+    <h2 id="question"></h2>
     <div id="options"></div>
     <button onclick="nextQuestion()">Next</button>
   </div>
 
-  <div id="result-screen" style="display:none;">
+  <div class="container hide" id="end-screen">
     <h2>Quiz Complete!</h2>
-    <p id="finalScore"></p>
+    <p id="score-text"></p>
     <button onclick="playAgain()">Play Again</button>
     <button onclick="goHome()">Go to Home</button>
   </div>
 
-  <div class="footer">Developed by: Arvind Singla</div>
-</div>
+  <script>
+    let username = "";
+    let current = 0;
+    let score = 0;
+    let questions = [];
 
-<script>
-  let questions = [];
-  let current = 0;
-  let score = 0;
-  let username = "";
-
-  fetch('https://singla1209.github.io/Quiz_App/questions.json')
-    .then(response => {
-      if (!response.ok) throw new Error("Network response was not ok");
-      return response.json();
-    })
-    .then(data => {
-      questions = data;
-    })
-    .catch(error => {
-      alert("Error loading questions.");
-      console.error(error);
-    });
-
-  function startQuiz() {
-    username = document.getElementById("nameInput").value.trim();
-    if (!username) {
-      alert("Please enter your name.");
-      return;
+    function startQuiz() {
+      const nameInput = document.getElementById("username").value.trim();
+      if (!nameInput) {
+        alert("Please enter your name.");
+        return;
+      }
+      username = nameInput;
+      document.getElementById("welcome-screen").classList.add("hide");
+      document.getElementById("quiz-screen").classList.remove("hide");
+      fetchQuestions();
     }
 
-    current = 0;
-    score = 0;
-
-    document.getElementById("welcome-screen").style.display = "none";
-    document.getElementById("quiz-screen").style.display = "block";
-    document.getElementById("userName").innerText = "Hello, " + username + "!";
-    showQuestion();
-  }
-
-  function showQuestion() {
-    if (current >= questions.length) {
-      document.getElementById("quiz-screen").style.display = "none";
-      document.getElementById("result-screen").style.display = "block";
-      document.getElementById("finalScore").innerText = `${username}, you scored ${score} out of ${questions.length}`;
-      return;
+    function fetchQuestions() {
+      fetch('https://singla1209.github.io/Quiz_App/questions.json')
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to load");
+          return res.json();
+        })
+        .then(data => {
+          questions = data;
+          current = 0;
+          score = 0;
+          showQuestion();
+        })
+        .catch(err => {
+          alert("Error loading questions.");
+          console.error(err);
+        });
     }
 
-    const q = questions[current];
-    document.getElementById("question").innerHTML = `<h3>${q.question}</h3>`;
-    const options = Object.entries(q.options).map(([key, val]) => {
-      return `<button class="option-btn" onclick="checkAnswer('${key}')">${key}: ${val}</button>`;
-    }).join("");
-    document.getElementById("options").innerHTML = options;
-  }
-
-  function checkAnswer(selected) {
-    if (selected === questions[current].correct) {
-      score++;
+    function showQuestion() {
+      const q = questions[current];
+      document.getElementById("question").textContent = q.question;
+      document.getElementById("options").innerHTML = "";
+      for (let key in q.options) {
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.textContent = `${key}: ${q.options[key]}`;
+        btn.onclick = () => checkAnswer(key);
+        document.getElementById("options").appendChild(btn);
+      }
     }
-    current++;
-    showQuestion();
-  }
 
-  function nextQuestion() {
-    current++;
-    showQuestion();
-  }
+    function checkAnswer(selected) {
+      const correct = questions[current].correct;
+      if (selected === correct) score++;
+      document.querySelectorAll('.option-btn').forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent.startsWith(correct)) {
+          btn.style.background = 'green';
+        } else if (btn.textContent.startsWith(selected)) {
+          btn.style.background = 'red';
+        }
+      });
+    }
 
-  function playAgain() {
-    current = 0;
-    score = 0;
-    document.getElementById("result-screen").style.display = "none";
-    document.getElementById("quiz-screen").style.display = "block";
-    showQuestion();
-  }
+    function nextQuestion() {
+      if (current < questions.length - 1) {
+        current++;
+        showQuestion();
+      } else {
+        showEndScreen();
+      }
+    }
 
-  function goHome() {
-    document.getElementById("result-screen").style.display = "none";
-    document.getElementById("welcome-screen").style.display = "block";
-    document.getElementById("nameInput").value = "";
-  }
-</script>
+    function showEndScreen() {
+      document.getElementById("quiz-screen").classList.add("hide");
+      document.getElementById("end-screen").classList.remove("hide");
+      document.getElementById("score-text").innerText =
+        `${username}, your score is ${score}/${questions.length}`;
+    }
 
+    function playAgain() {
+       document.getElementById("end-screen").classList.add("hide");
+      document.getElementById("welcome-screen").classList.remove("hide");
+      document.getElementById("username").value = "";
+
+    }
+
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
 </body>
 </html>

@@ -1,251 +1,251 @@
 [
   {
-    "question": "Which of the following processes does NOT require oxygen in human beings?",
+    "question": "Which part of the brain controls voluntary actions?",
     "options": {
-      "A": "Aerobic respiration",
-      "B": "Electron transport chain",
-      "C": "Glycolysis",
-      "D": "Krebs cycle"
-    },
-    "correct": "C"
-  },
-  {
-    "question": "The primary site of photosynthesis in a leaf is the:",
-    "options": {
-      "A": "Upper epidermis",
-      "B": "Spongy parenchyma",
-      "C": "Palisade mesophyll",
-      "D": "Lower epidermis"
-    },
-    "correct": "C"
-  },
-  {
-    "question": "Which enzyme initiates the digestion of starch in the human mouth?",
-    "options": {
-      "A": "Trypsin",
-      "B": "Amylase",
-      "C": "Lipase",
-      "D": "Pepsin"
+      "A": "Cerebellum",
+      "B": "Cerebrum",
+      "C": "Medulla",
+      "D": "Hypothalamus"
     },
     "correct": "B"
   },
   {
-    "question": "Which of the following blood vessels has the thickest wall?",
+    "question": "Which gland is both endocrine and exocrine in function?",
     "options": {
-      "A": "Vein",
-      "B": "Capillary",
-      "C": "Artery",
-      "D": "Venule"
+      "A": "Pituitary gland",
+      "B": "Adrenal gland",
+      "C": "Pancreas",
+      "D": "Thyroid gland"
     },
     "correct": "C"
   },
   {
-    "question": "In plants, exchange of gases takes place through:",
+    "question": "Which hormone regulates the basal metabolic rate (BMR)?",
     "options": {
-      "A": "Stomata",
-      "B": "Cuticle",
-      "C": "Lenticels",
-      "D": "Both A and C"
+      "A": "Adrenaline",
+      "B": "Insulin",
+      "C": "Thyroxine",
+      "D": "Glucagon"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which part of the neuron receives impulses?",
+    "options": {
+      "A": "Axon",
+      "B": "Synapse",
+      "C": "Dendrite",
+      "D": "Myelin sheath"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which hormone is responsible for 'fight or flight' response?",
+    "options": {
+      "A": "Insulin",
+      "B": "Adrenaline",
+      "C": "Thyroxine",
+      "D": "Cortisol"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "What is the function of the cerebellum?",
+    "options": {
+      "A": "Memory and thinking",
+      "B": "Balance and coordination",
+      "C": "Breathing control",
+      "D": "Vision processing"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which part of the brain controls reflex actions?",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Medulla oblongata",
+      "C": "Cerebellum",
+      "D": "Spinal cord"
     },
     "correct": "D"
   },
   {
-    "question": "Which pigment is responsible for trapping light energy in photosynthesis?",
+    "question": "Which of the following hormones regulates blood sugar levels?",
     "options": {
-      "A": "Carotene",
-      "B": "Chlorophyll",
-      "C": "Xanthophyll",
-      "D": "Anthocyanin"
-    },
-    "correct": "B"
-  },
-  {
-    "question": "Which of the following is NOT part of the human respiratory system?",
-    "options": {
-      "A": "Alveoli",
-      "B": "Trachea",
-      "C": "Nephrons",
-      "D": "Bronchi"
+      "A": "Estrogen",
+      "B": "Adrenaline",
+      "C": "Insulin",
+      "D": "Thyroxine"
     },
     "correct": "C"
   },
   {
-    "question": "The main function of bile is to:",
+    "question": "What is the gap between two neurons called?",
     "options": {
-      "A": "Digest proteins",
-      "B": "Emulsify fats",
-      "C": "Neutralize stomach acid",
-      "D": "Digest carbohydrates"
-    },
-    "correct": "B"
-  },
-  {
-    "question": "Which structure in the nephron is responsible for filtration?",
-    "options": {
-      "A": "Loop of Henle",
-      "B": "Bowman\u2019s capsule",
-      "C": "Collecting duct",
-      "D": "Renal pelvis"
-    },
-    "correct": "B"
-  },
-  {
-    "question": "The correct sequence of parts in the human alimentary canal is:",
-    "options": {
-      "A": "Mouth \u2192 Stomach \u2192 Esophagus \u2192 Small intestine",
-      "B": "Mouth \u2192 Esophagus \u2192 Stomach \u2192 Small intestine",
-      "C": "Mouth \u2192 Small intestine \u2192 Stomach \u2192 Esophagus",
-      "D": "Esophagus \u2192 Mouth \u2192 Stomach \u2192 Large intestine"
-    },
-    "correct": "B"
-  },
-  {
-    "question": "Which organ in the human body is responsible for detoxification?",
-    "options": {
-      "A": "Heart",
-      "B": "Kidney",
-      "C": "Liver",
-      "D": "Lung"
+      "A": "Node of Ranvier",
+      "B": "Dendrite",
+      "C": "Synapse",
+      "D": "Axon terminal"
     },
     "correct": "C"
   },
   {
-    "question": "Which part of the chloroplast is responsible for the light reactions?",
+    "question": "Which lobe of the brain processes visual information?",
     "options": {
-      "A": "Stroma",
-      "B": "Grana",
-      "C": "Outer membrane",
-      "D": "Inner membrane"
+      "A": "Parietal",
+      "B": "Frontal",
+      "C": "Temporal",
+      "D": "Occipital"
     },
-    "correct": "B"
+    "correct": "D"
   },
   {
-    "question": "Which molecule acts as the final electron acceptor in aerobic respiration?",
+    "question": "Which hormone controls the reabsorption of water in kidneys?",
     "options": {
-      "A": "Carbon dioxide",
-      "B": "ATP",
-      "C": "Oxygen",
-      "D": "Water"
-    },
-    "correct": "C"
-  },
-  {
-    "question": "In humans, oxygenated and deoxygenated blood are separated by:",
-    "options": {
-      "A": "Lungs",
-      "B": "Heart",
-      "C": "Diaphragm",
-      "D": "Kidney"
-    },
-    "correct": "B"
-  },
-  {
-    "question": "Which of these is NOT a product of anaerobic respiration in yeast?",
-    "options": {
-      "A": "Ethanol",
-      "B": "Carbon dioxide",
-      "C": "Water",
-      "D": "ATP"
-    },
-    "correct": "C"
-  },
-  {
-    "question": "Which among the following is the smallest functional unit of kidney?",
-    "options": {
-      "A": "Neuron",
-      "B": "Alveoli",
-      "C": "Nephron",
-      "D": "Glomerulus"
-    },
-    "correct": "C"
-  },
-  {
-    "question": "Which hormone regulates the glucose level in the blood?",
-    "options": {
-      "A": "Insulin",
-      "B": "Thyroxine",
-      "C": "Adrenaline",
-      "D": "Testosterone"
+      "A": "ADH (Vasopressin)",
+      "B": "Oxytocin",
+      "C": "Insulin",
+      "D": "Aldosterone"
     },
     "correct": "A"
   },
   {
-    "question": "The process of removal of nitrogenous waste from the body is called:",
+    "question": "Which of these is a master gland in humans?",
     "options": {
-      "A": "Respiration",
-      "B": "Excretion",
-      "C": "Transpiration",
-      "D": "Digestion"
+      "A": "Thyroid",
+      "B": "Adrenal",
+      "C": "Pituitary",
+      "D": "Pineal"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "In which part of the brain is the hypothalamus located?",
+    "options": {
+      "A": "Forebrain",
+      "B": "Midbrain",
+      "C": "Hindbrain",
+      "D": "Brainstem"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which neuron carries messages from sense organs to the brain?",
+    "options": {
+      "A": "Motor neuron",
+      "B": "Sensory neuron",
+      "C": "Connector neuron",
+      "D": "Relay neuron"
     },
     "correct": "B"
   },
   {
-    "question": "Which blood component helps in clotting?",
+    "question": "The hormone responsible for lowering blood glucose is:",
     "options": {
-      "A": "Plasma",
-      "B": "RBC",
-      "C": "WBC",
-      "D": "Platelets"
+      "A": "Glucagon",
+      "B": "Insulin",
+      "C": "Cortisol",
+      "D": "Adrenaline"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which part of the nervous system controls involuntary actions?",
+    "options": {
+      "A": "Somatic nervous system",
+      "B": "Autonomic nervous system",
+      "C": "Central nervous system",
+      "D": "Peripheral nervous system"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "How do hormones reach their target organs?",
+    "options": {
+      "A": "Via nerves",
+      "B": "Via lymph",
+      "C": "Via blood",
+      "D": "Via spinal cord"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following hormones is not secreted by the pituitary gland?",
+    "options": {
+      "A": "TSH",
+      "B": "FSH",
+      "C": "Insulin",
+      "D": "GH"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which hormone is secreted in response to stress?",
+    "options": {
+      "A": "Insulin",
+      "B": "Cortisol",
+      "C": "Thyroxine",
+      "D": "Estrogen"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which part of the eye controls the amount of light entering the eye?",
+    "options": {
+      "A": "Retina",
+      "B": "Lens",
+      "C": "Pupil",
+      "D": "Iris"
     },
     "correct": "D"
   },
   {
-    "question": "The valve present between left atrium and left ventricle is:",
+    "question": "Which sense organ contains the organ of Corti?",
     "options": {
-      "A": "Tricuspid valve",
-      "B": "Pulmonary valve",
-      "C": "Mitral valve",
-      "D": "Aortic valve"
+      "A": "Nose",
+      "B": "Ear",
+      "C": "Eye",
+      "D": "Skin"
     },
-    "correct": "C"
+    "correct": "B"
   },
   {
-    "question": "During photosynthesis, the oxygen is released from:",
+    "question": "Which gland controls the sleep-wake cycle?",
     "options": {
-      "A": "Carbon dioxide",
-      "B": "Chlorophyll",
-      "C": "Water",
-      "D": "Glucose"
+      "A": "Thyroid",
+      "B": "Pineal",
+      "C": "Adrenal",
+      "D": "Pituitary"
     },
-    "correct": "C"
+    "correct": "B"
   },
   {
-    "question": "Which part of the brain controls the involuntary actions like heartbeat and breathing?",
+    "question": "Which of the following connects the two hemispheres of the brain?",
     "options": {
-      "A": "Cerebrum",
+      "A": "Pons",
+      "B": "Corpus callosum",
+      "C": "Medulla",
+      "D": "Cerebellum"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which part of the nervous system is affected in paralysis?",
+    "options": {
+      "A": "Spinal cord",
       "B": "Cerebellum",
       "C": "Medulla",
       "D": "Hypothalamus"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The inner lining of small intestine has numerous finger-like projections called:",
-    "options": {
-      "A": "Alveoli",
-      "B": "Villi",
-      "C": "Nephrons",
-      "D": "Cilia"
-    },
-    "correct": "B"
-  },
-  {
-    "question": "Which of the following is the correct equation for photosynthesis?",
-    "options": {
-      "A": "6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082",
-      "B": "C\u2086H\u2081\u2082O\u2086 + 6O\u2082 \u2192 6CO\u2082 + 6H\u2082O",
-      "C": "O\u2082 + C\u2086H\u2081\u2082O\u2086 \u2192 CO\u2082 + H\u2082O",
-      "D": "CO\u2082 + O\u2082 \u2192 C\u2086H\u2081\u2082O\u2086"
-    },
     "correct": "A"
   },
   {
-    "question": "What is the main nitrogenous waste excreted in human urine?",
+    "question": "What is the main difference between nervous and hormonal control?",
     "options": {
-      "A": "Ammonia",
-      "B": "Uric acid",
-      "C": "Urea",
-      "D": "Creatinine"
+      "A": "Hormonal is faster",
+      "B": "Nervous is long-lasting",
+      "C": "Hormonal uses blood, nervous uses neurons",
+      "D": "Nervous uses blood, hormonal uses neurons"
     },
     "correct": "C"
   }

@@ -1,0 +1,252 @@
+[
+  {
+    "question": "Who was the architect of the unification of Germany?",
+    "options": {
+      "A": "Giuseppe Mazzini",
+      "B": "Otto von Bismarck",
+      "C": "Giuseppe Garibaldi",
+      "D": "Napoleon Bonaparte"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The term 'absolutist' refers to:",
+    "options": {
+      "A": "Democratic rule",
+      "B": "Monarchial government",
+      "C": "Centralised authority with no checks",
+      "D": "Parliamentary rule"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Who painted the famous painting 'Germania'?",
+    "options": {
+      "A": "Franz Josef",
+      "B": "Lorenz Clasen",
+      "C": "Delacroix",
+      "D": "Otto von Bismarck"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which treaty recognized Greece as an independent nation in 1832?",
+    "options": {
+      "A": "Treaty of Paris",
+      "B": "Treaty of Constantinople",
+      "C": "Treaty of Versailles",
+      "D": "Treaty of Vienna"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Who led the Italian revolutionary group called the Red Shirts?",
+    "options": {
+      "A": "Cavour",
+      "B": "Victor Emmanuel II",
+      "C": "Garibaldi",
+      "D": "Mazzini"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What did the ‘Nation’ mean to the middle class in 19th-century Europe?",
+    "options": {
+      "A": "Democracy and freedom",
+      "B": "Absolute monarchy",
+      "C": "Colonialism",
+      "D": "Conservatism"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which event is referred to as the 'Sorrow of Versailles'?",
+    "options": {
+      "A": "Fall of France",
+      "B": "German unification",
+      "C": "Napoleon’s defeat",
+      "D": "Treaty of Versailles"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "The French Revolution gave rise to the idea of:",
+    "options": {
+      "A": "Socialism",
+      "B": "Colonialism",
+      "C": "Nation-states",
+      "D": "Liberalism"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which country became a model of nation-state for others in Europe?",
+    "options": {
+      "A": "Germany",
+      "B": "Italy",
+      "C": "France",
+      "D": "Russia"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What was the main aim of the Treaty of Vienna (1815)?",
+    "options": {
+      "A": "To divide Germany",
+      "B": "To redraw European borders after Napoleon",
+      "C": "To unify Italy",
+      "D": "To create the EU"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Who was proclaimed as the king of united Italy in 1861?",
+    "options": {
+      "A": "Mazzini",
+      "B": "Victor Emmanuel II",
+      "C": "Cavour",
+      "D": "Garibaldi"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which ideology believes in liberty, equality, and fraternity?",
+    "options": {
+      "A": "Conservatism",
+      "B": "Absolutism",
+      "C": "Liberalism",
+      "D": "Feudalism"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The allegory of France was represented by:",
+    "options": {
+      "A": "Germania",
+      "B": "Liberty",
+      "C": "Marianne",
+      "D": "Helvetia"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The Non-Cooperation Movement was started in:",
+    "options": {
+      "A": "1915",
+      "B": "1919",
+      "C": "1920",
+      "D": "1922"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which incident prompted Gandhiji to withdraw the Non-Cooperation Movement?",
+    "options": {
+      "A": "Jallianwala Bagh",
+      "B": "Dandi March",
+      "C": "Chauri Chaura",
+      "D": "Rowlatt Act"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Who wrote ‘Hind Swaraj’?",
+    "options": {
+      "A": "Bal Gangadhar Tilak",
+      "B": "Mahatma Gandhi",
+      "C": "Jawaharlal Nehru",
+      "D": "Subhash Chandra Bose"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The Jallianwala Bagh massacre occurred in which year?",
+    "options": {
+      "A": "1917",
+      "B": "1919",
+      "C": "1921",
+      "D": "1923"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The idea of ‘Swaraj’ meant for the peasants:",
+    "options": {
+      "A": "Freedom from British rule",
+      "B": "Reduction in taxes",
+      "C": "Complete independence",
+      "D": "Abolition of landlords"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "The Salt March was started from Sabarmati to:",
+    "options": {
+      "A": "Delhi",
+      "B": "Dandi",
+      "C": "Ahmedabad",
+      "D": "Bombay"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which Act gave the British government emergency powers to arrest Indians?",
+    "options": {
+      "A": "Rowlatt Act",
+      "B": "Pitt’s India Act",
+      "C": "Regulating Act",
+      "D": "Indian Councils Act"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which leader is associated with the Khilafat Movement?",
+    "options": {
+      "A": "Subhash Chandra Bose",
+      "B": "Maulana Azad",
+      "C": "Ali Brothers",
+      "D": "Jawaharlal Nehru"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The Congress session at Lahore in 1929 was presided over by:",
+    "options": {
+      "A": "Gandhiji",
+      "B": "Motilal Nehru",
+      "C": "Subhash Chandra Bose",
+      "D": "Jawaharlal Nehru"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "The term 'Satyagraha' means:",
+    "options": {
+      "A": "Physical force",
+      "B": "Moral force",
+      "C": "Political negotiation",
+      "D": "Boycott of elections"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The Civil Disobedience Movement was launched in:",
+    "options": {
+      "A": "1930",
+      "B": "1928",
+      "C": "1932",
+      "D": "1935"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The Simon Commission was boycotted because:",
+    "options": {
+      "A": "It was against Indians",
+      "B": "It had no Indian members",
+      "C": "It wanted to divide Bengal",
+      "D": "It abolished elections"
+    },
+    "correct": "B"
+  }
+]

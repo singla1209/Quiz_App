@@ -1,0 +1,252 @@
+[
+  {
+    "question": "The HCF of 60 and 75 is:",
+    "options": {
+      "A": "5",
+      "B": "15",
+      "C": "10",
+      "D": "20"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "If HCF(a, b) × LCM(a, b) = a × b, then HCF(12, 18) is:",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "12",
+      "D": "18"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Every composite number has:",
+    "options": {
+      "A": "Exactly two factors",
+      "B": "Only one factor",
+      "C": "More than two factors",
+      "D": "No factors"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The least number that is divisible by 6, 8, and 12 is:",
+    "options": {
+      "A": "48",
+      "B": "24",
+      "C": "96",
+      "D": "12"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "√2 is:",
+    "options": {
+      "A": "A rational number",
+      "B": "An irrational number",
+      "C": "A natural number",
+      "D": "An even number"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The decimal expansion of 1/7 is:",
+    "options": {
+      "A": "Terminating",
+      "B": "Non-terminating repeating",
+      "C": "Non-terminating non-repeating",
+      "D": "Whole number"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The LCM of two numbers is 180 and their HCF is 6. If one number is 30, the other is:",
+    "options": {
+      "A": "36",
+      "B": "48",
+      "C": "24",
+      "D": "60"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which of the following numbers has a terminating decimal expansion?",
+    "options": {
+      "A": "2/3",
+      "B": "4/9",
+      "C": "7/8",
+      "D": "1/7"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The HCF of two consecutive even numbers is:",
+    "options": {
+      "A": "2",
+      "B": "1",
+      "C": "Even number",
+      "D": "Odd number"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which of the following is a rational number?",
+    "options": {
+      "A": "π",
+      "B": "√3",
+      "C": "0.25",
+      "D": "√2"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The product of a rational and an irrational number is:",
+    "options": {
+      "A": "Always rational",
+      "B": "Always irrational",
+      "C": "May be rational or irrational",
+      "D": "Zero"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The number of digits in the repeating block of 1/13 is:",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "3",
+      "D": "None of these"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which is the smallest prime number?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Degree of the polynomial 5x³ - 4x² + x - 7 is:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following is not a polynomial?",
+    "options": {
+      "A": "x² + 2x + 1",
+      "B": "x³ - x + 5",
+      "C": "1/x + 2",
+      "D": "2x² - 3x"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The value of the polynomial x² - 4x + 3 at x = 2 is:",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "-1",
+      "D": "0"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "If α and β are the zeroes of x² - 5x + 6, then α + β =",
+    "options": {
+      "A": "6",
+      "B": "5",
+      "C": "1",
+      "D": "0"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The number of zeroes of a cubic polynomial is:",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "1"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is a linear polynomial?",
+    "options": {
+      "A": "x² + 2x + 1",
+      "B": "x + 5",
+      "C": "x³ + 2x",
+      "D": "2x² - x + 3"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Remainder when x² + 3x + 2 is divided by x + 1 is:",
+    "options": {
+      "A": "2",
+      "B": "1",
+      "C": "0",
+      "D": "6"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The value of polynomial x² + 2x + 1 at x = -1 is:",
+    "options": {
+      "A": "0",
+      "B": "4",
+      "C": "1",
+      "D": "-2"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The zeroes of the polynomial x² - 2x + 1 are:",
+    "options": {
+      "A": "1, 2",
+      "B": "1, -1",
+      "C": "1, 1",
+      "D": "2, 2"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "If a polynomial has degree 0, it is called:",
+    "options": {
+      "A": "Constant",
+      "B": "Linear",
+      "C": "Quadratic",
+      "D": "Zero polynomial"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which of the following is a factor of x² - 9?",
+    "options": {
+      "A": "x - 2",
+      "B": "x + 2",
+      "C": "x + 3",
+      "D": "x + 4"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "If a + b = 0, then (a² - b²) equals:",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2ab",
+      "D": "-2ab"
+    },
+    "correct": "A"
+  }
+]

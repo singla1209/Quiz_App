@@ -39,16 +39,6 @@
       font-size: 1.6em;
     }
 
-    input[type="text"] {
-      padding: 12px;
-      width: 100%;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-top: 10px;
-      box-sizing: border-box;
-    }
-
     button {
       padding: 12px 25px;
       margin: 12px 6px;
@@ -109,14 +99,9 @@
   </style>
 </head>
 <body>
-  <div class="container" id="welcome-screen">
-    <h1>Welcome to the Quiz!</h1>
-    <input type="text" id="username" placeholder="Enter your name" />
-    <br><br>
-    <button onclick="startQuiz()">Start Quiz</button>
-  </div>
+  <!-- Welcome screen removed -->
 
-  <div class="container hide" id="quiz-screen">
+  <div class="container" id="quiz-screen">
     <h2 id="question"></h2>
     <div id="options"></div>
     <button onclick="nextQuestion()">Next</button>
@@ -125,7 +110,7 @@
   <div class="container hide" id="end-screen">
     <h2>Quiz Complete!</h2>
     <p id="score-text"></p>
-    <button onclick="playAgain()">Play Quiz -> English Modals</button>
+    <button onclick="playAgain()">Play Quiz -> Error Spotting</button>
     <button onclick="goHome()">Go to Home</button>
   </div>
 
@@ -137,20 +122,12 @@
     let answers = [];
     let startTime;
 
-    function startQuiz() {
-      const nameInput = document.getElementById("username").value.trim();
-      if (!nameInput) {
-        alert("Please enter your name.");
-        return;
-      }
-      username = nameInput;
-      document.getElementById("welcome-screen").classList.add("hide");
-      document.getElementById("quiz-screen").classList.remove("hide");
+    window.onload = () => {
       fetchQuestions();
-    }
+    };
 
     function fetchQuestions() {
-      fetch('https://singla1209.github.io/Quiz_App/questions_eng.json')
+      fetch('https://singla1209.github.io/Quiz_App/questions_eng_Omission.json')
         .then(res => {
           if (!res.ok) throw new Error("Failed to load");
           return res.json();
@@ -217,7 +194,7 @@
       document.getElementById("quiz-screen").classList.add("hide");
       document.getElementById("end-screen").classList.remove("hide");
       document.getElementById("score-text").innerText =
-        `${username}, your score is ${score}/${questions.length}`;
+        `Your score is ${score}/${questions.length}`;
 
       const entry = {
         name: username,
@@ -236,7 +213,7 @@
       let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
 
       leaderboard.push({
-        name: entry.name,
+        name: entry.name || "Anonymous",
         score: entry.score,
         total: entry.total,
         timestamp: entry.timestamp,
@@ -250,8 +227,7 @@
     }
 
     function playAgain() {
-      window.location.href = "eng_modals.html";
-      
+    window.location.href = "eng_ErrorSpotting.html";
     }
 
     function goHome() {

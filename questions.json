@@ -1,5 +1,605 @@
 [
   {
+    "question": "Which of the following is a displacement reaction?",
+    "options": {
+      "A": "Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu",
+      "B": "2Mg + O\u2082 \u2192 2MgO",
+      "C": "CaCO\u2083 \u2192 CaO + CO\u2082",
+      "D": "HCl + NaOH \u2192 NaCl + H\u2082O"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The chemical reaction between hydrogen and oxygen to form water is an example of:",
+    "options": {
+      "A": "Decomposition",
+      "B": "Combination",
+      "C": "Displacement",
+      "D": "Double displacement"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which one of the following processes involves a chemical reaction?",
+    "options": {
+      "A": "Melting of ice",
+      "B": "Dissolution of salt in water",
+      "C": "Rusting of iron",
+      "D": "Boiling of water"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What is the color change observed when ferrous sulfate is heated?",
+    "options": {
+      "A": "Green to red",
+      "B": "Green to brown",
+      "C": "Green to white",
+      "D": "Green to yellow"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is an example of a photochemical reaction?",
+    "options": {
+      "A": "Decomposition of CaCO\u2083",
+      "B": "Reaction of Na with H\u2082O",
+      "C": "Photosynthesis",
+      "D": "Rusting of iron"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The reaction: AgNO\u2083 + NaCl \u2192 AgCl + NaNO\u2083 is an example of:",
+    "options": {
+      "A": "Combination reaction",
+      "B": "Displacement reaction",
+      "C": "Double displacement reaction",
+      "D": "Decomposition reaction"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following gas is evolved when zinc reacts with hydrochloric acid?",
+    "options": {
+      "A": "Oxygen",
+      "B": "Hydrogen",
+      "C": "Chlorine",
+      "D": "Carbon dioxide"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The brown-colored gas evolved on heating lead nitrate is:",
+    "options": {
+      "A": "NO\u2082",
+      "B": "N\u2082O",
+      "C": "NO",
+      "D": "N\u2082"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which of the following is a balanced chemical equation?",
+    "options": {
+      "A": "H\u2082 + O\u2082 \u2192 H\u2082O",
+      "B": "2H\u2082 + O\u2082 \u2192 2H\u2082O",
+      "C": "H\u2082 + Cl\u2082 \u2192 HCl",
+      "D": "2Mg + O\u2082 \u2192 MgO"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "What type of chemical reaction takes place when quicklime reacts with water?",
+    "options": {
+      "A": "Endothermic",
+      "B": "Exothermic",
+      "C": "Displacement",
+      "D": "Neutralization"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of these is not a physical change?",
+    "options": {
+      "A": "Melting of wax",
+      "B": "Cutting of paper",
+      "C": "Boiling of water",
+      "D": "Burning of wood"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "A student adds dilute HCl to zinc granules and observes bubbles. The correct inference is:",
+    "options": {
+      "A": "A gas is released",
+      "B": "A solid is formed",
+      "C": "Temperature decreases",
+      "D": "No reaction occurs"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which of the following reactions is used in black and white photography?",
+    "options": {
+      "A": "Decomposition",
+      "B": "Neutralization",
+      "C": "Precipitation",
+      "D": "Combination"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The reaction 2FeSO\u2084 \u2192 Fe\u2082O\u2083 + SO\u2082 + SO\u2083 is a:",
+    "options": {
+      "A": "Combination",
+      "B": "Displacement",
+      "C": "Decomposition",
+      "D": "Double displacement"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "In redox reactions:",
+    "options": {
+      "A": "Only oxidation occurs",
+      "B": "Only reduction occurs",
+      "C": "Oxidation and reduction occur simultaneously",
+      "D": "No electrons are transferred"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which chemical is used to test the presence of carbon dioxide gas?",
+    "options": {
+      "A": "Limewater",
+      "B": "Benedict\u2019s solution",
+      "C": "Iodine solution",
+      "D": "Alcohol"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "In a redox reaction, the substance which loses electrons is said to be:",
+    "options": {
+      "A": "Oxidized",
+      "B": "Reduced",
+      "C": "Neutral",
+      "D": "Displaced"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which metal is most reactive in the reactivity series?",
+    "options": {
+      "A": "Zinc",
+      "B": "Copper",
+      "C": "Potassium",
+      "D": "Iron"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What is observed when silver chloride is kept in sunlight?",
+    "options": {
+      "A": "Turns blue",
+      "B": "Turns black",
+      "C": "Turns green",
+      "D": "No change"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following does NOT represent a redox reaction?",
+    "options": {
+      "A": "Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu",
+      "B": "2Mg + O\u2082 \u2192 2MgO",
+      "C": "NaOH + HCl \u2192 NaCl + H\u2082O",
+      "D": "2K + Cl\u2082 \u2192 2KCl"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which product forms when sodium bicarbonate is heated?",
+    "options": {
+      "A": "Na\u2082CO\u2083 + CO\u2082 + H\u2082O",
+      "B": "NaOH + CO\u2082",
+      "C": "Na + CO\u2082 + H\u2082O",
+      "D": "NaCO\u2083 + CO\u2082"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The rusting of iron is a type of:",
+    "options": {
+      "A": "Displacement reaction",
+      "B": "Combination and redox reaction",
+      "C": "Neutralization reaction",
+      "D": "Decomposition reaction"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which among the following reactions is a thermal decomposition reaction?",
+    "options": {
+      "A": "2Pb(NO\u2083)\u2082 \u2192 2PbO + 4NO\u2082 + O\u2082",
+      "B": "C + O\u2082 \u2192 CO\u2082",
+      "C": "NaOH + HCl \u2192 NaCl + H\u2082O",
+      "D": "Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which of the following is used in the white-washing of walls?",
+    "options": {
+      "A": "Calcium hydroxide",
+      "B": "Sodium hydroxide",
+      "C": "Calcium oxide",
+      "D": "Calcium carbonate"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "What is the correct observation when dilute sulphuric acid is added to iron filings?",
+    "options": {
+      "A": "No reaction occurs",
+      "B": "A brown gas is evolved",
+      "C": "Effervescence occurs with hydrogen gas evolution",
+      "D": "A black precipitate forms"
+    },
+    "correct": "C"
+  },
+ {
+    "question": "Which of the following processes does NOT require oxygen in human beings?",
+    "options": {
+      "A": "Aerobic respiration",
+      "B": "Electron transport chain",
+      "C": "Glycolysis",
+      "D": "Krebs cycle"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The primary site of photosynthesis in a leaf is the:",
+    "options": {
+      "A": "Upper epidermis",
+      "B": "Spongy parenchyma",
+      "C": "Palisade mesophyll",
+      "D": "Lower epidermis"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which enzyme initiates the digestion of starch in the human mouth?",
+    "options": {
+      "A": "Trypsin",
+      "B": "Amylase",
+      "C": "Lipase",
+      "D": "Pepsin"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following blood vessels has the thickest wall?",
+    "options": {
+      "A": "Vein",
+      "B": "Capillary",
+      "C": "Artery",
+      "D": "Venule"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "In plants, exchange of gases takes place through:",
+    "options": {
+      "A": "Stomata",
+      "B": "Cuticle",
+      "C": "Lenticels",
+      "D": "Both A and C"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which pigment is responsible for trapping light energy in photosynthesis?",
+    "options": {
+      "A": "Carotene",
+      "B": "Chlorophyll",
+      "C": "Xanthophyll",
+      "D": "Anthocyanin"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is NOT part of the human respiratory system?",
+    "options": {
+      "A": "Alveoli",
+      "B": "Trachea",
+      "C": "Nephrons",
+      "D": "Bronchi"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The main function of bile is to:",
+    "options": {
+      "A": "Digest proteins",
+      "B": "Emulsify fats",
+      "C": "Neutralize stomach acid",
+      "D": "Digest carbohydrates"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which structure in the nephron is responsible for filtration?",
+    "options": {
+      "A": "Loop of Henle",
+      "B": "Bowman\u2019s capsule",
+      "C": "Collecting duct",
+      "D": "Renal pelvis"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "The correct sequence of parts in the human alimentary canal is:",
+    "options": {
+      "A": "Mouth \u2192 Stomach \u2192 Esophagus \u2192 Small intestine",
+      "B": "Mouth \u2192 Esophagus \u2192 Stomach \u2192 Small intestine",
+      "C": "Mouth \u2192 Small intestine \u2192 Stomach \u2192 Esophagus",
+      "D": "Esophagus \u2192 Mouth \u2192 Stomach \u2192 Large intestine"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which organ in the human body is responsible for detoxification?",
+    "options": {
+      "A": "Heart",
+      "B": "Kidney",
+      "C": "Liver",
+      "D": "Lung"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which part of the chloroplast is responsible for the light reactions?",
+    "options": {
+      "A": "Stroma",
+      "B": "Grana",
+      "C": "Outer membrane",
+      "D": "Inner membrane"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which molecule acts as the final electron acceptor in aerobic respiration?",
+    "options": {
+      "A": "Carbon dioxide",
+      "B": "ATP",
+      "C": "Oxygen",
+      "D": "Water"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "In humans, oxygenated and deoxygenated blood are separated by:",
+    "options": {
+      "A": "Lungs",
+      "B": "Heart",
+      "C": "Diaphragm",
+      "D": "Kidney"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of these is NOT a product of anaerobic respiration in yeast?",
+    "options": {
+      "A": "Ethanol",
+      "B": "Carbon dioxide",
+      "C": "Water",
+      "D": "ATP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which among the following is the smallest functional unit of kidney?",
+    "options": {
+      "A": "Neuron",
+      "B": "Alveoli",
+      "C": "Nephron",
+      "D": "Glomerulus"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which hormone regulates the glucose level in the blood?",
+    "options": {
+      "A": "Insulin",
+      "B": "Thyroxine",
+      "C": "Adrenaline",
+      "D": "Testosterone"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "The process of removal of nitrogenous waste from the body is called:",
+    "options": {
+      "A": "Respiration",
+      "B": "Excretion",
+      "C": "Transpiration",
+      "D": "Digestion"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which blood component helps in clotting?",
+    "options": {
+      "A": "Plasma",
+      "B": "RBC",
+      "C": "WBC",
+      "D": "Platelets"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "The valve present between left atrium and left ventricle is:",
+    "options": {
+      "A": "Tricuspid valve",
+      "B": "Pulmonary valve",
+      "C": "Mitral valve",
+      "D": "Aortic valve"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "During photosynthesis, the oxygen is released from:",
+    "options": {
+      "A": "Carbon dioxide",
+      "B": "Chlorophyll",
+      "C": "Water",
+      "D": "Glucose"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which part of the brain controls the involuntary actions like heartbeat and breathing?",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Cerebellum",
+      "C": "Medulla",
+      "D": "Hypothalamus"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "The inner lining of small intestine has numerous finger-like projections called:",
+    "options": {
+      "A": "Alveoli",
+      "B": "Villi",
+      "C": "Nephrons",
+      "D": "Cilia"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is the correct equation for photosynthesis?",
+    "options": {
+      "A": "6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082",
+      "B": "C\u2086H\u2081\u2082O\u2086 + 6O\u2082 \u2192 6CO\u2082 + 6H\u2082O",
+      "C": "O\u2082 + C\u2086H\u2081\u2082O\u2086 \u2192 CO\u2082 + H\u2082O",
+      "D": "CO\u2082 + O\u2082 \u2192 C\u2086H\u2081\u2082O\u2086"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "What is the main nitrogenous waste excreted in human urine?",
+    "options": {
+      "A": "Ammonia",
+      "B": "Uric acid",
+      "C": "Urea",
+      "D": "Creatinine"
+    },
+    "correct": "C"
+  },
+{
+    "question": "Which acid is commonly used in car batteries and is also known as oil of vitriol?",
+    "options": {
+      "A": "Nitric acid",
+      "B": "Hydrochloric acid",
+      "C": "Sulphuric acid",
+      "D": "Acetic acid"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following substances can act as both an acid and a base (amphoteric)?",
+    "options": {
+      "A": "NaOH",
+      "B": "HCl",
+      "C": "H\u2082O",
+      "D": "NaCl"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "A solution turns phenolphthalein pink. Which of the following could be the solution?",
+    "options": {
+      "A": "Dilute HCl",
+      "B": "Lemon juice",
+      "C": "Sodium hydroxide",
+      "D": "Vinegar"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following salts is used for making baking powder?",
+    "options": {
+      "A": "Sodium carbonate",
+      "B": "Sodium bicarbonate",
+      "C": "Ammonium chloride",
+      "D": "Potassium nitrate"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "What is formed when carbon dioxide is passed through lime water for a long time?",
+    "options": {
+      "A": "Calcium hydroxide",
+      "B": "Calcium carbonate",
+      "C": "Calcium bicarbonate",
+      "D": "Calcium oxide"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of these is not a property of a base?",
+    "options": {
+      "A": "Turns red litmus blue",
+      "B": "Has a bitter taste",
+      "C": "Reacts with metals to give hydrogen",
+      "D": "Feels soapy to touch"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following is a weak base?",
+    "options": {
+      "A": "NaOH",
+      "B": "KOH",
+      "C": "NH\u2084OH",
+      "D": "Ca(OH)\u2082"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Plaster of Paris should be stored in a moisture-proof container because:",
+    "options": {
+      "A": "It is highly reactive with metals",
+      "B": "It sets into a hard mass in the presence of moisture",
+      "C": "It releases harmful gases",
+      "D": "It loses its color in air"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is used in antacids to relieve acidity in the stomach?",
+    "options": {
+      "A": "Sodium chloride",
+      "B": "Sodium bicarbonate",
+      "C": "Sodium carbonate",
+      "D": "Potassium chloride"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "What is the pH value of a neutral solution at 25\u00b0C?",
+    "options": {
+      "A": "0",
+      "B": "7",
+      "C": "14",
+      "D": "1"
+    },
+    "correct": "B"
+  },
+ {
     "question": "Which part of the brain controls voluntary actions?",
     "options": {
       "A": "Cerebellum",
@@ -249,4 +849,5 @@
     },
     "correct": "C"
   }
+
 ]

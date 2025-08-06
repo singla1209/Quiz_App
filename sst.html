@@ -150,24 +150,44 @@
     }
 
     function fetchQuestions() {
-      fetch('https://singla1209.github.io/Quiz_App/questions_sst.json')
-        .then(res => {
-          if (!res.ok) throw new Error("Failed to load");
-          return res.json();
-        })
-        .then(data => {
-          questions = data;
-          current = 0;
-          score = 0;
-          answers = [];
-          startTime = new Date();
-          showQuestion();
-        })
-        .catch(err => {
-          alert("Error loading questions.");
-          console.error(err);
-        });
-    }
+  // Fetch the questions JSON from external URL
+  fetch('https://singla1209.github.io/Quiz_App/questions_sst.json')
+    .then(res => {
+      if (!res.ok) throw new Error("Failed to load"); // Check if response is OK
+      return res.json(); // Parse JSON data
+    })
+    .then(data => {
+      // Shuffle the questions randomly using custom function
+      questions = shuffleArray(data);
+
+      // Initialize quiz state
+      current = 0;
+      score = 0;
+      answers = [];
+      startTime = new Date(); // Start the timer
+
+      // Show the first question
+      showQuestion();
+    })
+    .catch(err => {
+      // Handle any error during fetch
+      alert("Error loading questions.");
+      console.error(err);
+    });
+}
+
+
+// Fisher-Yates shuffle algorithm to randomize array order
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    // Generate a random index j such that 0 <= j <= i
+    const j = Math.floor(Math.random() * (i + 1));
+    // Swap elements at indices i and j
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array; // Return the shuffled array
+}
+
 
     function showQuestion() {
       const q = questions[current];
@@ -261,4 +281,3 @@
   </script>
 </body>
 </html>
-

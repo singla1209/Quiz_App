@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Which of the following is an input device?",
+    "options": {
+      "A": "Monitor",
+      "B": "Printer",
+      "C": "Mouse",
+      "D": "Speaker"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does CPU stand for?",
+    "options": {
+      "A": "Central Process Unit",
+      "B": "Central Processing Unit",
+      "C": "Computer Processing Unit",
+      "D": "Control Processing Unit"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is not an operating system?",
+    "options": {
+      "A": "Windows",
+      "B": "Linux",
+      "C": "Oracle",
+      "D": "MacOS"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which storage device is considered volatile?",
+    "options": {
+      "A": "Hard Disk",
+      "B": "SSD",
+      "C": "RAM",
+      "D": "Pen Drive"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of these is a web browser?",
+    "options": {
+      "A": "Google Chrome",
+      "B": "Windows",
+      "C": "Linux",
+      "D": "Intel"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which one is a programming language?",
+    "options": {
+      "A": "HTTP",
+      "B": "HTML",
+      "C": "Java",
+      "D": "WWW"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What type of software is MS Word?",
+    "options": {
+      "A": "System Software",
+      "B": "Operating System",
+      "C": "Utility Software",
+      "D": "Application Software"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which key is used to refresh a web page?",
+    "options": {
+      "A": "F1",
+      "B": "F5",
+      "C": "F2",
+      "D": "F9"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which protocol is used to send emails?",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "POP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which company developed the Windows OS?",
+    "options": {
+      "A": "Apple",
+      "B": "Google",
+      "C": "Microsoft",
+      "D": "IBM"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following is an input device? (Set 2)",
+    "options": {
+      "A": "Monitor",
+      "B": "Printer",
+      "C": "Mouse",
+      "D": "Speaker"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does CPU stand for? (Set 2)",
+    "options": {
+      "A": "Central Process Unit",
+      "B": "Central Processing Unit",
+      "C": "Computer Processing Unit",
+      "D": "Control Processing Unit"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is not an operating system? (Set 2)",
+    "options": {
+      "A": "Windows",
+      "B": "Linux",
+      "C": "Oracle",
+      "D": "MacOS"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which storage device is considered volatile? (Set 2)",
+    "options": {
+      "A": "Hard Disk",
+      "B": "SSD",
+      "C": "RAM",
+      "D": "Pen Drive"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of these is a web browser? (Set 2)",
+    "options": {
+      "A": "Google Chrome",
+      "B": "Windows",
+      "C": "Linux",
+      "D": "Intel"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which one is a programming language? (Set 2)",
+    "options": {
+      "A": "HTTP",
+      "B": "HTML",
+      "C": "Java",
+      "D": "WWW"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What type of software is MS Word? (Set 2)",
+    "options": {
+      "A": "System Software",
+      "B": "Operating System",
+      "C": "Utility Software",
+      "D": "Application Software"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which key is used to refresh a web page? (Set 2)",
+    "options": {
+      "A": "F1",
+      "B": "F5",
+      "C": "F2",
+      "D": "F9"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which protocol is used to send emails? (Set 2)",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "POP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which company developed the Windows OS? (Set 2)",
+    "options": {
+      "A": "Apple",
+      "B": "Google",
+      "C": "Microsoft",
+      "D": "IBM"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following is an input device? (Set 3)",
+    "options": {
+      "A": "Monitor",
+      "B": "Printer",
+      "C": "Mouse",
+      "D": "Speaker"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does CPU stand for? (Set 3)",
+    "options": {
+      "A": "Central Process Unit",
+      "B": "Central Processing Unit",
+      "C": "Computer Processing Unit",
+      "D": "Control Processing Unit"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is not an operating system? (Set 3)",
+    "options": {
+      "A": "Windows",
+      "B": "Linux",
+      "C": "Oracle",
+      "D": "MacOS"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which storage device is considered volatile? (Set 3)",
+    "options": {
+      "A": "Hard Disk",
+      "B": "SSD",
+      "C": "RAM",
+      "D": "Pen Drive"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of these is a web browser? (Set 3)",
+    "options": {
+      "A": "Google Chrome",
+      "B": "Windows",
+      "C": "Linux",
+      "D": "Intel"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which one is a programming language? (Set 3)",
+    "options": {
+      "A": "HTTP",
+      "B": "HTML",
+      "C": "Java",
+      "D": "WWW"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What type of software is MS Word? (Set 3)",
+    "options": {
+      "A": "System Software",
+      "B": "Operating System",
+      "C": "Utility Software",
+      "D": "Application Software"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which key is used to refresh a web page? (Set 3)",
+    "options": {
+      "A": "F1",
+      "B": "F5",
+      "C": "F2",
+      "D": "F9"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which protocol is used to send emails? (Set 3)",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "POP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which company developed the Windows OS? (Set 3)",
+    "options": {
+      "A": "Apple",
+      "B": "Google",
+      "C": "Microsoft",
+      "D": "IBM"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following is an input device? (Set 4)",
+    "options": {
+      "A": "Monitor",
+      "B": "Printer",
+      "C": "Mouse",
+      "D": "Speaker"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does CPU stand for? (Set 4)",
+    "options": {
+      "A": "Central Process Unit",
+      "B": "Central Processing Unit",
+      "C": "Computer Processing Unit",
+      "D": "Control Processing Unit"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is not an operating system? (Set 4)",
+    "options": {
+      "A": "Windows",
+      "B": "Linux",
+      "C": "Oracle",
+      "D": "MacOS"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which storage device is considered volatile? (Set 4)",
+    "options": {
+      "A": "Hard Disk",
+      "B": "SSD",
+      "C": "RAM",
+      "D": "Pen Drive"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of these is a web browser? (Set 4)",
+    "options": {
+      "A": "Google Chrome",
+      "B": "Windows",
+      "C": "Linux",
+      "D": "Intel"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which one is a programming language? (Set 4)",
+    "options": {
+      "A": "HTTP",
+      "B": "HTML",
+      "C": "Java",
+      "D": "WWW"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What type of software is MS Word? (Set 4)",
+    "options": {
+      "A": "System Software",
+      "B": "Operating System",
+      "C": "Utility Software",
+      "D": "Application Software"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which key is used to refresh a web page? (Set 4)",
+    "options": {
+      "A": "F1",
+      "B": "F5",
+      "C": "F2",
+      "D": "F9"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which protocol is used to send emails? (Set 4)",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "POP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which company developed the Windows OS? (Set 4)",
+    "options": {
+      "A": "Apple",
+      "B": "Google",
+      "C": "Microsoft",
+      "D": "IBM"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of the following is an input device? (Set 5)",
+    "options": {
+      "A": "Monitor",
+      "B": "Printer",
+      "C": "Mouse",
+      "D": "Speaker"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does CPU stand for? (Set 5)",
+    "options": {
+      "A": "Central Process Unit",
+      "B": "Central Processing Unit",
+      "C": "Computer Processing Unit",
+      "D": "Control Processing Unit"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is not an operating system? (Set 5)",
+    "options": {
+      "A": "Windows",
+      "B": "Linux",
+      "C": "Oracle",
+      "D": "MacOS"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which storage device is considered volatile? (Set 5)",
+    "options": {
+      "A": "Hard Disk",
+      "B": "SSD",
+      "C": "RAM",
+      "D": "Pen Drive"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which of these is a web browser? (Set 5)",
+    "options": {
+      "A": "Google Chrome",
+      "B": "Windows",
+      "C": "Linux",
+      "D": "Intel"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which one is a programming language? (Set 5)",
+    "options": {
+      "A": "HTTP",
+      "B": "HTML",
+      "C": "Java",
+      "D": "WWW"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What type of software is MS Word? (Set 5)",
+    "options": {
+      "A": "System Software",
+      "B": "Operating System",
+      "C": "Utility Software",
+      "D": "Application Software"
+    },
+    "correct": "D"
+  },
+  {
+    "question": "Which key is used to refresh a web page? (Set 5)",
+    "options": {
+      "A": "F1",
+      "B": "F5",
+      "C": "F2",
+      "D": "F9"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which protocol is used to send emails? (Set 5)",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "POP"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which company developed the Windows OS? (Set 5)",
+    "options": {
+      "A": "Apple",
+      "B": "Google",
+      "C": "Microsoft",
+      "D": "IBM"
+    },
+    "correct": "C"
+  }
+]

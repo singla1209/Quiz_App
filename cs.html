@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quiz App</title>
+
+  <!-- 🌈 Styling for layout, buttons, and transitions -->
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #74ebd5, #9face6);
+      background: linear-gradient(135deg, #74ebd5, #9face6); /* Gradient background */
       margin: 0;
       padding: 0;
       min-height: 100vh;
@@ -92,6 +94,14 @@
       margin-top: 10px;
     }
 
+    #progress {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #555;
+      font-weight: bold;
+    }
+
+    /* 📱 Mobile Responsive Design */
     @media (max-width: 480px) {
       button {
         font-size: 14px;
@@ -108,7 +118,10 @@
     }
   </style>
 </head>
+
 <body>
+
+  <!-- 👋 Welcome Screen (Enter Name + Start Quiz) -->
   <div class="container" id="welcome-screen">
     <h1>Welcome to the Quiz!</h1>
     <input type="text" id="username" placeholder="Enter your name" />
@@ -116,12 +129,15 @@
     <button onclick="startQuiz()">Start Quiz</button>
   </div>
 
+  <!-- ❓ Quiz Screen: Displays Questions & Options -->
   <div class="container hide" id="quiz-screen">
-    <h2 id="question"></h2>
-    <div id="options"></div>
-    <button onclick="nextQuestion()">Next</button>
+    <h2 id="question"></h2> <!-- Question text -->
+    <div id="progress"></div> <!-- 👣 Progress bar text -->
+    <div id="options"></div> <!-- Answer options -->
+    <button onclick="nextQuestion()">Next</button> <!-- Go to next question -->
   </div>
 
+  <!-- ✅ End Screen: Show score and options to restart -->
   <div class="container hide" id="end-screen">
     <h2>Quiz Complete!</h2>
     <p id="score-text"></p>
@@ -129,7 +145,13 @@
     <button onclick="goHome()">Go to Home</button>
   </div>
 
+  <!-- 🔊 Sound Effects for correct & wrong answers -->
+  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+
+  <!-- 💡 Main Quiz Logic -->
   <script>
+    // Global variables
     let username = "";
     let current = 0;
     let score = 0;
@@ -137,6 +159,7 @@
     let answers = [];
     let startTime;
 
+    //▶️ Called when Start Quiz is clicked
     function startQuiz() {
       const nameInput = document.getElementById("username").value.trim();
       if (!nameInput) {
@@ -144,54 +167,54 @@
         return;
       }
       username = nameInput;
+
+      // Hide welcome, show quiz screen
       document.getElementById("welcome-screen").classList.add("hide");
       document.getElementById("quiz-screen").classList.remove("hide");
-      fetchQuestions();
+
+      fetchQuestions(); // Load questions
     }
 
+    // 📥 Load questions from external JSON
     function fetchQuestions() {
-  // Fetch the questions JSON from external URL
-  fetch('https://singla1209.github.io/Quiz_App/questions_cs.json')
-    .then(res => {
-      if (!res.ok) throw new Error("Failed to load"); // Check if response is OK
-      return res.json(); // Parse JSON data
-    })
-    .then(data => {
-      // Shuffle the questions randomly using custom function
-      questions = shuffleArray(data);
+      fetch('https://singla1209.github.io/Quiz_App/questions_cs.json')
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to load");
+          return res.json();
+        })
+        .then(data => {
+          questions = shuffleArray(data); // Randomize question order
+          current = 0;
+          score = 0;
+          answers = [];
+          startTime = new Date();
+          showQuestion(); // Display first question
+        })
+        .catch(err => {
+          alert("Error loading questions.");
+          console.error(err);
+        });
+    }
 
-      // Initialize quiz state
-      current = 0;
-      score = 0;
-      answers = [];
-      startTime = new Date(); // Start the timer
+    // 🔀 Shuffle questions randomly
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
 
-      // Show the first question
-      showQuestion();
-    })
-    .catch(err => {
-      // Handle any error during fetch
-      alert("Error loading questions.");
-      console.error(err);
-    });
-}
-
-// Fisher-Yates shuffle algorithm to randomize array order
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    // Generate a random index j such that 0 <= j <= i
-    const j = Math.floor(Math.random() * (i + 1));
-    // Swap elements at indices i and j
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array; // Return the shuffled array
-}
-
-
+    // 🧠 Display current question and options
     function showQuestion() {
       const q = questions[current];
       document.getElementById("question").textContent = q.question;
       document.getElementById("options").innerHTML = "";
+
+      // 👣 Show progress text like "Question 3 of 10"
+      document.getElementById("progress").textContent = `Question ${current + 1} of ${questions.length}`;
+
+      // Create buttons for each option
       for (let key in q.options) {
         const btn = document.createElement("button");
         btn.className = "option-btn";
@@ -201,14 +224,26 @@ function shuffleArray(array) {
       }
     }
 
+    // ✅ Check if the selected answer is correct
     function checkAnswer(selected) {
       const correct = questions[current].correct;
+
+      // Save user's answer to review later
       answers.push({
         question: questions[current].question,
         selected: selected,
         correct: correct
       });
-      if (selected === correct) score++;
+
+      // 🎵 Play sound based on answer correctness
+      if (selected === correct) {
+        score++;
+        document.getElementById("correct-sound").play();
+      } else {
+        document.getElementById("wrong-sound").play();
+      }
+
+      // Disable all buttons and show correct/wrong colors
       document.querySelectorAll('.option-btn').forEach(btn => {
         btn.disabled = true;
         if (btn.textContent.startsWith(correct)) {
@@ -219,6 +254,7 @@ function shuffleArray(array) {
       });
     }
 
+    // 👉 Show next question or finish quiz
     function nextQuestion() {
       if (current < questions.length - 1) {
         current++;
@@ -228,16 +264,21 @@ function shuffleArray(array) {
       }
     }
 
+    // 🎉 Show final screen with score and time
     function showEndScreen() {
       const endTime = new Date();
-      const timeTaken = Math.round((endTime - startTime) / 1000);
-      const timestamp = new Date().toLocaleString();
+      const timeTaken = Math.round((endTime - startTime) / 1000); // In seconds
+      const timestamp = new Date().toLocaleString(); // Current date/time
 
+      // Switch to end screen
       document.getElementById("quiz-screen").classList.add("hide");
       document.getElementById("end-screen").classList.remove("hide");
+
+      // Show final score
       document.getElementById("score-text").innerText =
         `${username}, your score is ${score}/${questions.length}`;
 
+      // Save entry to localStorage leaderboard
       const entry = {
         name: username,
         score: score,
@@ -250,6 +291,7 @@ function shuffleArray(array) {
       saveToLeaderboard(entry);
     }
 
+    // 💾 Save user result to local storage
     function saveToLeaderboard(entry) {
       let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
       let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
@@ -268,14 +310,16 @@ function shuffleArray(array) {
       localStorage.setItem("submissions", JSON.stringify(submissions));
     }
 
+    // 🔁 Restart the quiz from welcome screen
     function playAgain() {
       document.getElementById("end-screen").classList.add("hide");
       document.getElementById("welcome-screen").classList.remove("hide");
       document.getElementById("username").value = "";
     }
 
+    // 🏠 Go to home (optional if you have main menu)
     function goHome() {
-      window.location.href = "index.html";
+      window.location.href = "index.html"; // Or adjust as needed
     }
   </script>
 </body>

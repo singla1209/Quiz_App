@@ -9,7 +9,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #74ebd5, #9face6); /* Gradient background */
+      background: linear-gradient(135deg, #74ebd5, #9face6);
       margin: 0;
       padding: 0;
       min-height: 100vh;
@@ -101,7 +101,21 @@
       font-weight: bold;
     }
 
-    /* 📱 Mobile Responsive Design */
+    #progress-bar {
+      height: 10px;
+      background: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    #progress-bar-inner {
+      height: 100%;
+      background: #4CAF50;
+      width: 0%;
+      transition: width 0.3s ease-in-out;
+    }
+
     @media (max-width: 480px) {
       button {
         font-size: 14px;
@@ -131,10 +145,17 @@
 
   <!-- ❓ Quiz Screen: Displays Questions & Options -->
   <div class="container hide" id="quiz-screen">
-    <h2 id="question"></h2> <!-- Question text -->
-    <div id="progress"></div> <!-- 👣 Progress bar text -->
-    <div id="options"></div> <!-- Answer options -->
-    <button onclick="nextQuestion()">Next</button> <!-- Go to next question -->
+    <h2 id="question"></h2>
+
+
+    <div id="progress"></div> <!-- Text progress -->
+    <div id="progress-bar"><div id="progress-bar-inner"></div></div> <!-- Visual progress bar -->
+
+
+
+
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Next</button>
   </div>
 
   <!-- ✅ End Screen: Show score and options to restart -->
@@ -145,13 +166,12 @@
     <button onclick="goHome()">Go to Home</button>
   </div>
 
-  <!-- 🔊 Sound Effects for correct & wrong answers -->
-  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
-  <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+  <!-- 🔊 Sound Effects for correct & wrong answers (use .wav format for reliability) -->
+  <audio id="correct-sound" src="correct.wav" preload="auto"></audio>
+  <audio id="wrong-sound" src="wrong.wav" preload="auto"></audio>
 
   <!-- 💡 Main Quiz Logic -->
   <script>
-    // Global variables
     let username = "";
     let current = 0;
     let score = 0;
@@ -159,7 +179,6 @@
     let answers = [];
     let startTime;
 
-    //▶️ Called when Start Quiz is clicked
     function startQuiz() {
       const nameInput = document.getElementById("username").value.trim();
       if (!nameInput) {
@@ -167,15 +186,11 @@
         return;
       }
       username = nameInput;
-
-      // Hide welcome, show quiz screen
       document.getElementById("welcome-screen").classList.add("hide");
       document.getElementById("quiz-screen").classList.remove("hide");
-
-      fetchQuestions(); // Load questions
+      fetchQuestions();
     }
 
-    // 📥 Load questions from external JSON
     function fetchQuestions() {
       fetch('https://singla1209.github.io/Quiz_App/questions_cs.json')
         .then(res => {
@@ -183,12 +198,12 @@
           return res.json();
         })
         .then(data => {
-          questions = shuffleArray(data); // Randomize question order
+          questions = shuffleArray(data);
           current = 0;
           score = 0;
           answers = [];
           startTime = new Date();
-          showQuestion(); // Display first question
+          showQuestion();
         })
         .catch(err => {
           alert("Error loading questions.");
@@ -196,7 +211,6 @@
         });
     }
 
-    // 🔀 Shuffle questions randomly
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -205,16 +219,18 @@
       return array;
     }
 
-    // 🧠 Display current question and options
     function showQuestion() {
       const q = questions[current];
       document.getElementById("question").textContent = q.question;
       document.getElementById("options").innerHTML = "";
 
-      // 👣 Show progress text like "Question 3 of 10"
+// 👣 Show progress text like "Question 3 of 10"
       document.getElementById("progress").textContent = `Question ${current + 1} of ${questions.length}`;
 
-      // Create buttons for each option
+      // Update visual progress bar width
+      const progressPercent = ((current + 1) / questions.length) * 100;
+      document.getElementById("progress-bar-inner").style.width = progressPercent + "%";
+
       for (let key in q.options) {
         const btn = document.createElement("button");
         btn.className = "option-btn";
@@ -224,18 +240,10 @@
       }
     }
 
-    // ✅ Check if the selected answer is correct
     function checkAnswer(selected) {
       const correct = questions[current].correct;
+      answers.push({ question: questions[current].question, selected, correct });
 
-      // Save user's answer to review later
-      answers.push({
-        question: questions[current].question,
-        selected: selected,
-        correct: correct
-      });
-
-      // 🎵 Play sound based on answer correctness
       if (selected === correct) {
         score++;
         document.getElementById("correct-sound").play();
@@ -243,7 +251,6 @@
         document.getElementById("wrong-sound").play();
       }
 
-      // Disable all buttons and show correct/wrong colors
       document.querySelectorAll('.option-btn').forEach(btn => {
         btn.disabled = true;
         if (btn.textContent.startsWith(correct)) {
@@ -254,7 +261,6 @@
       });
     }
 
-    // 👉 Show next question or finish quiz
     function nextQuestion() {
       if (current < questions.length - 1) {
         current++;
@@ -264,21 +270,17 @@
       }
     }
 
-    // 🎉 Show final screen with score and time
     function showEndScreen() {
       const endTime = new Date();
-      const timeTaken = Math.round((endTime - startTime) / 1000); // In seconds
-      const timestamp = new Date().toLocaleString(); // Current date/time
+      const timeTaken = Math.round((endTime - startTime) / 1000);
+      const timestamp = new Date().toLocaleString();
 
-      // Switch to end screen
       document.getElementById("quiz-screen").classList.add("hide");
       document.getElementById("end-screen").classList.remove("hide");
 
-      // Show final score
       document.getElementById("score-text").innerText =
         `${username}, your score is ${score}/${questions.length}`;
 
-      // Save entry to localStorage leaderboard
       const entry = {
         name: username,
         score: score,
@@ -291,7 +293,6 @@
       saveToLeaderboard(entry);
     }
 
-    // 💾 Save user result to local storage
     function saveToLeaderboard(entry) {
       let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
       let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
@@ -310,16 +311,14 @@
       localStorage.setItem("submissions", JSON.stringify(submissions));
     }
 
-    // 🔁 Restart the quiz from welcome screen
     function playAgain() {
       document.getElementById("end-screen").classList.add("hide");
       document.getElementById("welcome-screen").classList.remove("hide");
       document.getElementById("username").value = "";
     }
 
-    // 🏠 Go to home (optional if you have main menu)
     function goHome() {
-      window.location.href = "index.html"; // Or adjust as needed
+      window.location.href = "index.html";
     }
   </script>
 </body>

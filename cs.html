@@ -1,242 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quiz App</title>
-
-  <!-- 🌈 Styling for layout, buttons, and transitions -->
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #74ebd5, #9face6);
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
       margin: 0;
       padding: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow-x: hidden;
     }
-
-    .container {
-      width: 90%;
-      max-width: 600px;
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px 25px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    #quiz-container {
+      max-width: 700px;
+      margin: 80px auto;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00000077;
+    }
+    h1 {
       text-align: center;
-      animation: fadeIn 0.5s ease;
-      box-sizing: border-box;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    h1, h2 {
+    #question {
+      font-size: 1.3em;
       margin-bottom: 20px;
-      color: #333;
-      font-size: 1.6em;
     }
-
-    input[type="text"] {
-      padding: 12px;
-      width: 100%;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-top: 10px;
-      box-sizing: border-box;
-    }
-
-    button {
-      padding: 12px 25px;
-      margin: 12px 6px;
-      border: none;
-      background: #4CAF50;
-      color: white;
-      font-size: 16px;
+    .option {
+      background-color: #ffffff11;
+      border: 2px solid white;
       border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      width: auto;
-      max-width: 90%;
-    }
-
-    button:hover {
-      background: #45a049;
-    }
-
-    .option-btn {
-      display: block;
-      margin: 10px auto;
-      width: 100%;
-      background-color: #2196F3;
-      font-size: 16px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      box-sizing: border-box;
-    }
-
-    .option-btn:hover {
-      background-color: #1976D2;
-    }
-
-    .hide {
-      display: none;
-    }
-
-    #score-text {
-      font-size: 18px;
-      color: #333;
-      margin-top: 10px;
-    }
-
-    #progress {
-      font-size: 16px;
+      padding: 10px 20px;
       margin: 10px 0;
-      color: #555;
-      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
     }
-
+    .option:hover {
+      background-color: #ffffff33;
+    }
+    #next-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #ffffff22;
+      border: 2px solid white;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #progress {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background-color: #00000044;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      box-shadow: 0 0 10px #00000088;
+    }
     #progress-bar {
       height: 10px;
-      background: #eee;
+      background: white;
       border-radius: 5px;
       overflow: hidden;
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
-
     #progress-bar-inner {
       height: 100%;
-      background: #4CAF50;
+      background: limegreen;
       width: 0%;
       transition: width 0.3s ease-in-out;
     }
-
-    /* ✅ Correct/Incorrect Tracker Styling */
-    #live-score {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 10px 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
-      font-size: 15px;
-      font-weight: bold;
-      color: #333;
-      font-family: Arial, sans-serif;
-      z-index: 9999;
+    #end-screen {
+      text-align: center;
+      margin-top: 80px;
     }
-
-    @media (max-width: 480px) {
-      button {
-        font-size: 14px;
-        padding: 10px 20px;
-      }
-
-      .container {
-        padding: 20px 15px;
-      }
-
-      h1, h2 {
-        font-size: 1.4em;
-      }
-
-      #live-score {
-        font-size: 14px;
-        padding: 8px 12px;
-      }
+    #end-screen button {
+      margin: 10px;
+      padding: 10px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      background-color: #ffffff33;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    #end-screen button:hover {
+      background-color: #ffffff55;
     }
   </style>
 </head>
-
 <body>
-
-  <!-- ✅ Floating Live Score Tracker -->
-  <div id="live-score">
-    ✅ Correct: <span id="correctCount">0</span><br>
-    ❌ Incorrect: <span id="incorrectCount">0</span>
-  </div>
-
-  <!-- 👋 Welcome Screen (Enter Name + Start Quiz) -->
-  <div class="container" id="welcome-screen">
-    <h1>Welcome to the Quiz!</h1>
-    <input type="text" id="username" placeholder="Enter your name" />
-    <br><br>
-    <button onclick="startQuiz()">Start Quiz</button>
-  </div>
-
-  <!-- ❓ Quiz Screen: Displays Questions & Options -->
-  <div class="container hide" id="quiz-screen">
-    <h2 id="question"></h2>
-
-    <div id="progress"></div>
+  <div id="progress">
+    ✅ Correct: 0 | ❌ Incorrect: 0<br>
+    <span id="qprogress">Question 1/1</span>
     <div id="progress-bar"><div id="progress-bar-inner"></div></div>
-    <div id="options"></div>
-    <button onclick="nextQuestion()">Next</button>
   </div>
 
-  <!-- ✅ End Screen -->
-  <div class="container hide" id="end-screen">
-    <h2>Quiz Complete!</h2>
-    <p id="score-text"></p>
-    <button onclick="playAgain()">Play Again</button>
-    <button onclick="goHome()">Go to Home</button>
+  <div id="quiz-container">
+    <h1>Quiz</h1>
+    <div id="question-container">
+      <div id="question">Loading...</div>
+      <div id="options"></div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="end-screen" style="display: none;">
+      <h2>Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <button onclick="restartQuiz()">Play Again</button>
+      <button onclick="goToHome()">Go to Home</button>
+    </div>
   </div>
 
-  <!-- 🔊 Sounds -->
   <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
   <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
 
-  <!-- 💡 Main Quiz Logic -->
   <script>
-    let username = "";
+    let questions = [];
     let current = 0;
     let score = 0;
-    let questions = [];
-    let answers = [];
-    let startTime;
     let correctCount = 0;
     let incorrectCount = 0;
-
-    function startQuiz() {
-      const nameInput = document.getElementById("username").value.trim();
-      if (!nameInput) {
-        alert("Please enter your name.");
-        return;
-      }
-      username = nameInput;
-      document.getElementById("welcome-screen").classList.add("hide");
-      document.getElementById("quiz-screen").classList.remove("hide");
-      fetchQuestions();
-    }
-
-    function fetchQuestions() {
-      fetch('https://singla1209.github.io/Quiz_App/questions_cs.json')
-        .then(res => {
-          if (!res.ok) throw new Error("Failed to load");
-          return res.json();
-        })
-        .then(data => {
-          questions = shuffleArray(data);
-          current = 0;
-          score = 0;
-          correctCount = 0;
-          incorrectCount = 0;
-          answers = [];
-          updateLiveScore();
-          startTime = new Date();
-          showQuestion();
-        })
-        .catch(err => {
-          alert("Error loading questions.");
-          console.error(err);
-        });
-    }
+    let questionAnswered = false;
 
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -246,26 +135,49 @@
       return array;
     }
 
-    function showQuestion() {
-      const q = questions[current];
-      document.getElementById("question").textContent = q.question;
-      document.getElementById("options").innerHTML = "";
+    fetch("https://singla1209.github.io/Quiz_App/questions_cs.json")
+      .then(res => res.json())
+      .then(data => {
+        questions = shuffleArray(data);
+        showQuestion();
+      });
 
-      document.getElementById("progress").textContent = `Question ${current + 1} of ${questions.length}`;
-      document.getElementById("progress-bar-inner").style.width = ((current + 1) / questions.length) * 100 + "%";
+    function showQuestion() {
+      questionAnswered = false;
+      const q = questions[current];
+      document.getElementById("question").innerText = `Q${current + 1}. ${q.question}`;
+
+      const optionsDiv = document.getElementById("options");
+      optionsDiv.innerHTML = "";
 
       for (let key in q.options) {
-        const btn = document.createElement("button");
-        btn.className = "option-btn";
-        btn.textContent = `${key}: ${q.options[key]}`;
-        btn.onclick = () => checkAnswer(key);
-        document.getElementById("options").appendChild(btn);
+        const div = document.createElement("div");
+        div.className = "option";
+        div.innerText = `${key}: ${q.options[key]}`;
+        div.onclick = () => checkAnswer(key, div);
+        optionsDiv.appendChild(div);
       }
+
+      // Update progress text and bar
+      document.getElementById("qprogress").innerText = `Question ${current + 1}/${questions.length}`;
+      document.getElementById("progress-bar-inner").style.width = ((current + 1) / questions.length) * 100 + "%";
     }
 
-    function checkAnswer(selected) {
+    function checkAnswer(selected, divElement) {
+      if (questionAnswered) return;
+      questionAnswered = true;
+
       const correct = questions[current].correct;
-      answers.push({ question: questions[current].question, selected, correct });
+
+      const allOptions = document.querySelectorAll(".option");
+      allOptions.forEach(btn => {
+        btn.style.pointerEvents = "none";
+        if (btn.innerText.startsWith(correct + ":")) {
+          btn.style.backgroundColor = "green";
+        } else if (btn === divElement) {
+          btn.style.backgroundColor = "red";
+        }
+      });
 
       if (selected === correct) {
         score++;
@@ -277,23 +189,21 @@
       }
 
       updateLiveScore();
-
-      document.querySelectorAll('.option-btn').forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent.startsWith(correct)) {
-          btn.style.background = 'green';
-        } else if (btn.textContent.startsWith(selected)) {
-          btn.style.background = 'red';
-        }
-      });
     }
 
     function updateLiveScore() {
-      document.getElementById("correctCount").textContent = correctCount;
-      document.getElementById("incorrectCount").textContent = incorrectCount;
+      document.getElementById("progress").innerHTML =
+        `✅ Correct: ${correctCount} | ❌ Incorrect: ${incorrectCount}<br>
+         <span id="qprogress">Question ${current + 1}/${questions.length}</span>
+         <div id="progress-bar"><div id="progress-bar-inner" style="width: ${(current + 1) / questions.length * 100}%"></div></div>`;
     }
 
     function nextQuestion() {
+      if (!questionAnswered) {
+        incorrectCount++;
+        updateLiveScore();
+      }
+
       if (current < questions.length - 1) {
         current++;
         showQuestion();
@@ -303,54 +213,24 @@
     }
 
     function showEndScreen() {
-      const endTime = new Date();
-      const timeTaken = Math.round((endTime - startTime) / 1000);
-      const timestamp = new Date().toLocaleString();
-
-      document.getElementById("quiz-screen").classList.add("hide");
-      document.getElementById("end-screen").classList.remove("hide");
-
-      document.getElementById("score-text").innerText =
-        `${username}, your score is ${score}/${questions.length}`;
-
-      const entry = {
-        name: username,
-        score: score,
-        total: questions.length,
-        timestamp: timestamp,
-        timeTaken: timeTaken + " sec",
-        answers: answers
-      };
-
-      saveToLeaderboard(entry);
+      document.getElementById("question-container").style.display = "none";
+      document.getElementById("end-screen").style.display = "block";
+      document.getElementById("final-score").innerText = `You got ${score} out of ${questions.length} correct.`;
     }
 
-    function saveToLeaderboard(entry) {
-      let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
-      let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
-
-      leaderboard.push({
-        name: entry.name,
-        score: entry.score,
-        total: entry.total,
-        timestamp: entry.timestamp,
-        timeTaken: entry.timeTaken
-      });
-
-      submissions.push(entry);
-
-      localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
-      localStorage.setItem("submissions", JSON.stringify(submissions));
+    function restartQuiz() {
+      current = 0;
+      score = 0;
+      correctCount = 0;
+      incorrectCount = 0;
+      document.getElementById("end-screen").style.display = "none";
+      document.getElementById("question-container").style.display = "block";
+      showQuestion();
+      updateLiveScore();
     }
 
-    function playAgain() {
-      document.getElementById("end-screen").classList.add("hide");
-      document.getElementById("welcome-screen").classList.remove("hide");
-      document.getElementById("username").value = "";
-    }
-
-    function goHome() {
-      window.location.href = "index.html";
+    function goToHome() {
+      location.reload(); // or redirect if you want
     }
   </script>
 </body>

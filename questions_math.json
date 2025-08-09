@@ -1,252 +1,2002 @@
 [
-  {
-    "question": "The HCF of 60 and 75 is:",
-    "options": {
-      "A": "5",
-      "B": "15",
-      "C": "10",
-      "D": "20"
+    {
+        "question": "The HCF of 26 and 91 is:",
+        "options": {
+            "A": "13",
+            "B": "26",
+            "C": "39",
+            "D": "91"
+        },
+        "correct": "A"
     },
-    "correct": "B"
-  },
-  {
-    "question": "If HCF(a, b) × LCM(a, b) = a × b, then HCF(12, 18) is:",
-    "options": {
-      "A": "3",
-      "B": "6",
-      "C": "12",
-      "D": "18"
+    {
+        "question": "The LCM of 72 and 120 is:",
+        "options": {
+            "A": "360",
+            "B": "720",
+            "C": "1440",
+            "D": "840"
+        },
+        "correct": "B"
     },
-    "correct": "B"
-  },
-  {
-    "question": "Every composite number has:",
-    "options": {
-      "A": "Exactly two factors",
-      "B": "Only one factor",
-      "C": "More than two factors",
-      "D": "No factors"
+    {
+        "question": "If p is a prime number, then \u221ap is:",
+        "options": {
+            "A": "Rational",
+            "B": "Irrational",
+            "C": "Whole Number",
+            "D": "Integer"
+        },
+        "correct": "B"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The least number that is divisible by 6, 8, and 12 is:",
-    "options": {
-      "A": "48",
-      "B": "24",
-      "C": "96",
-      "D": "12"
+    {
+        "question": "The Euclid\u2019s Division Lemma is used to find:",
+        "options": {
+            "A": "LCM",
+            "B": "HCF",
+            "C": "Both LCM and HCF",
+            "D": "Only Prime Factors"
+        },
+        "correct": "B"
     },
-    "correct": "A"
-  },
-  {
-    "question": "√2 is:",
-    "options": {
-      "A": "A rational number",
-      "B": "An irrational number",
-      "C": "A natural number",
-      "D": "An even number"
+    {
+        "question": "Which of the following is an irrational number?",
+        "options": {
+            "A": "0.333...",
+            "B": "\u221a7",
+            "C": "2.75",
+            "D": "5"
+        },
+        "correct": "B"
     },
-    "correct": "B"
-  },
-  {
-    "question": "The decimal expansion of 1/7 is:",
-    "options": {
-      "A": "Terminating",
-      "B": "Non-terminating repeating",
-      "C": "Non-terminating non-repeating",
-      "D": "Whole number"
+    {
+        "question": "The product of a rational and an irrational number is always:",
+        "options": {
+            "A": "Rational",
+            "B": "Irrational",
+            "C": "Whole",
+            "D": "Natural"
+        },
+        "correct": "B"
     },
-    "correct": "B"
-  },
-  {
-    "question": "The LCM of two numbers is 180 and their HCF is 6. If one number is 30, the other is:",
-    "options": {
-      "A": "36",
-      "B": "48",
-      "C": "24",
-      "D": "60"
+    {
+        "question": "The HCF and LCM of two numbers are 12 and 924 respectively. If one number is 132, the other number is:",
+        "options": {
+            "A": "66",
+            "B": "84",
+            "C": "72",
+            "D": "96"
+        },
+        "correct": "B"
     },
-    "correct": "A"
-  },
-  {
-    "question": "Which of the following numbers has a terminating decimal expansion?",
-    "options": {
-      "A": "2/3",
-      "B": "4/9",
-      "C": "7/8",
-      "D": "1/7"
+    {
+        "question": "2.131131113... is:",
+        "options": {
+            "A": "Terminating decimal",
+            "B": "Non-terminating repeating",
+            "C": "Non-terminating non-repeating",
+            "D": "Whole number"
+        },
+        "correct": "C"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The HCF of two consecutive even numbers is:",
-    "options": {
-      "A": "2",
-      "B": "1",
-      "C": "Even number",
-      "D": "Odd number"
+    {
+        "question": "The decimal expansion of 1/8 is:",
+        "options": {
+            "A": "0.125",
+            "B": "0.13",
+            "C": "0.333...",
+            "D": "0.1"
+        },
+        "correct": "A"
     },
-    "correct": "A"
-  },
-  {
-    "question": "Which of the following is a rational number?",
-    "options": {
-      "A": "π",
-      "B": "√3",
-      "C": "0.25",
-      "D": "√2"
+    {
+        "question": "If HCF(a, b) \u00d7 LCM(a, b) = 180 and a = 15, then b is:",
+        "options": {
+            "A": "10",
+            "B": "12",
+            "C": "18",
+            "D": "20"
+        },
+        "correct": "C"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The product of a rational and an irrational number is:",
-    "options": {
-      "A": "Always rational",
-      "B": "Always irrational",
-      "C": "May be rational or irrational",
-      "D": "Zero"
+    {
+        "question": "Which of the following numbers is divisible by 3?",
+        "options": {
+            "A": "121",
+            "B": "213",
+            "C": "122",
+            "D": "314"
+        },
+        "correct": "B"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The number of digits in the repeating block of 1/13 is:",
-    "options": {
-      "A": "5",
-      "B": "6",
-      "C": "3",
-      "D": "None of these"
+    {
+        "question": "The least number divisible by 8, 9, and 12 is:",
+        "options": {
+            "A": "72",
+            "B": "36",
+            "C": "144",
+            "D": "108"
+        },
+        "correct": "A"
     },
-    "correct": "B"
-  },
-  {
-    "question": "Which is the smallest prime number?",
-    "options": {
-      "A": "1",
-      "B": "2",
-      "C": "3",
-      "D": "5"
+    {
+        "question": "If a number is divisible by 9, it must be divisible by:",
+        "options": {
+            "A": "3",
+            "B": "6",
+            "C": "18",
+            "D": "27"
+        },
+        "correct": "A"
     },
-    "correct": "B"
-  },
-  {
-    "question": "Degree of the polynomial 5x³ - 4x² + x - 7 is:",
-    "options": {
-      "A": "1",
-      "B": "2",
-      "C": "3",
-      "D": "4"
+    {
+        "question": "\u221a49/4 equals:",
+        "options": {
+            "A": "7/2",
+            "B": "3.5",
+            "C": "Both A and B",
+            "D": "None"
+        },
+        "correct": "C"
     },
-    "correct": "C"
-  },
-  {
-    "question": "Which of the following is not a polynomial?",
-    "options": {
-      "A": "x² + 2x + 1",
-      "B": "x³ - x + 5",
-      "C": "1/x + 2",
-      "D": "2x² - 3x"
+    {
+        "question": "The HCF of two consecutive natural numbers is always:",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "The smaller number",
+            "D": "None"
+        },
+        "correct": "A"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The value of the polynomial x² - 4x + 3 at x = 2 is:",
-    "options": {
-      "A": "1",
-      "B": "3",
-      "C": "-1",
-      "D": "0"
+    {
+        "question": "LCM of first five prime numbers is:",
+        "options": {
+            "A": "210",
+            "B": "2310",
+            "C": "30",
+            "D": "300"
+        },
+        "correct": "A"
     },
-    "correct": "C"
-  },
-  {
-    "question": "If α and β are the zeroes of x² - 5x + 6, then α + β =",
-    "options": {
-      "A": "6",
-      "B": "5",
-      "C": "1",
-      "D": "0"
+    {
+        "question": "If x is a non-zero rational number and y is an irrational number, then x + y is:",
+        "options": {
+            "A": "Rational",
+            "B": "Irrational",
+            "C": "Whole",
+            "D": "Natural"
+        },
+        "correct": "B"
     },
-    "correct": "B"
-  },
-  {
-    "question": "The number of zeroes of a cubic polynomial is:",
-    "options": {
-      "A": "2",
-      "B": "3",
-      "C": "4",
-      "D": "1"
+    {
+        "question": "The HCF of 96 and 404 is:",
+        "options": {
+            "A": "4",
+            "B": "8",
+            "C": "12",
+            "D": "2"
+        },
+        "correct": "B"
     },
-    "correct": "B"
-  },
-  {
-    "question": "Which of the following is a linear polynomial?",
-    "options": {
-      "A": "x² + 2x + 1",
-      "B": "x + 5",
-      "C": "x³ + 2x",
-      "D": "2x² - x + 3"
+    {
+        "question": "0.142857142857... in fractional form is:",
+        "options": {
+            "A": "1/7",
+            "B": "2/7",
+            "C": "3/7",
+            "D": "4/7"
+        },
+        "correct": "A"
     },
-    "correct": "B"
-  },
-  {
-    "question": "Remainder when x² + 3x + 2 is divided by x + 1 is:",
-    "options": {
-      "A": "2",
-      "B": "1",
-      "C": "0",
-      "D": "6"
+    {
+        "question": "The decimal expansion of 13/50 is:",
+        "options": {
+            "A": "0.26",
+            "B": "0.2666...",
+            "C": "0.25",
+            "D": "0.24"
+        },
+        "correct": "A"
     },
-    "correct": "C"
-  },
-  {
-    "question": "The value of polynomial x² + 2x + 1 at x = -1 is:",
-    "options": {
-      "A": "0",
-      "B": "4",
-      "C": "1",
-      "D": "-2"
+    {
+        "question": "If x \u2013 2 is a factor of x\u00b2 \u2013 kx + 2, then the value of k is:",
+        "options": {
+            "A": "0",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+        },
+        "correct": "C"
     },
-    "correct": "A"
-  },
-  {
-    "question": "The zeroes of the polynomial x² - 2x + 1 are:",
-    "options": {
-      "A": "1, 2",
-      "B": "1, -1",
-      "C": "1, 1",
-      "D": "2, 2"
+    {
+        "question": "The degree of the polynomial 6x\u2074 \u2013 5x\u00b3 + 3x\u00b2 \u2013 x + 7 is:",
+        "options": {
+            "A": "4",
+            "B": "3",
+            "C": "2",
+            "D": "1"
+        },
+        "correct": "A"
     },
-    "correct": "C"
-  },
-  {
-    "question": "If a polynomial has degree 0, it is called:",
-    "options": {
-      "A": "Constant",
-      "B": "Linear",
-      "C": "Quadratic",
-      "D": "Zero polynomial"
+    {
+        "question": "If p(x) = x\u00b2 \u2013 3x + 2, then p(1) =",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "3"
+        },
+        "correct": "A"
     },
-    "correct": "A"
-  },
-  {
-    "question": "Which of the following is a factor of x² - 9?",
-    "options": {
-      "A": "x - 2",
-      "B": "x + 2",
-      "C": "x + 3",
-      "D": "x + 4"
+    {
+        "question": "The number of zeroes of the polynomial p(x) = x\u00b2 \u2013 4 is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "3"
+        },
+        "correct": "C"
     },
-    "correct": "C"
-  },
-  {
-    "question": "If a + b = 0, then (a² - b²) equals:",
-    "options": {
-      "A": "0",
-      "B": "1",
-      "C": "2ab",
-      "D": "-2ab"
+    {
+        "question": "Which of the following is a cubic polynomial?",
+        "options": {
+            "A": "x\u00b3 + 2x + 1",
+            "B": "x\u00b2 + 3x + 5",
+            "C": "x\u2074 + x\u00b2 + 1",
+            "D": "2x + 5"
+        },
+        "correct": "A"
     },
-    "correct": "A"
-  }
+    {
+        "question": "If x \u2013 1 is a factor of x\u00b3 \u2013 3x\u00b2 + x + k, then the value of k is:",
+        "options": {
+            "A": "2",
+            "B": "\u20132",
+            "C": "0",
+            "D": "1"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The value of p(\u20131) for p(x) = 2x\u00b3 \u2013 x\u00b2 + 4x \u2013 5 is:",
+        "options": {
+            "A": "\u20132",
+            "B": "\u20138",
+            "C": "\u201310",
+            "D": "\u201312"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The graph of a quadratic polynomial is:",
+        "options": {
+            "A": "Straight line",
+            "B": "Parabola",
+            "C": "Circle",
+            "D": "Ellipse"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If \u03b1 and \u03b2 are zeroes of x\u00b2 \u2013 5x + 6, then \u03b1 + \u03b2 =",
+        "options": {
+            "A": "5",
+            "B": "6",
+            "C": "\u20135",
+            "D": "\u20136"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If \u03b1 and \u03b2 are zeroes of x\u00b2 \u2013 7x + 12, then \u03b1\u03b2 =",
+        "options": {
+            "A": "7",
+            "B": "\u20137",
+            "C": "12",
+            "D": "\u201312"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "A polynomial of degree 1 is called:",
+        "options": {
+            "A": "Linear",
+            "B": "Quadratic",
+            "C": "Cubic",
+            "D": "Constant"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the graph of a polynomial touches the x-axis at only one point, then the number of zeroes is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "3"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The degree of the zero polynomial is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "Not defined",
+            "D": "Infinity"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If p(x) = 2x\u00b2 \u2013 3x + 4, then p(2) =",
+        "options": {
+            "A": "6",
+            "B": "8",
+            "C": "10",
+            "D": "14"
+        },
+        "correct": "D"
+    },
+    {
+        "question": "If p(x) = x\u00b2 \u2013 2x \u2013 8, then zeroes are:",
+        "options": {
+            "A": "4, \u20132",
+            "B": "\u20134, 2",
+            "C": "2, \u20132",
+            "D": "\u20134, \u20132"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The number of zeroes of a constant polynomial is:",
+        "options": {
+            "A": "1",
+            "B": "0",
+            "C": "2",
+            "D": "None of these"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The coefficient of x\u00b2 in 5x\u00b2 \u2013 3x + 7 is:",
+        "options": {
+            "A": "5",
+            "B": "\u20133",
+            "C": "7",
+            "D": "2"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If p(x) = x\u00b3 \u2013 6x\u00b2 + 11x \u2013 6, then sum of zeroes is:",
+        "options": {
+            "A": "6",
+            "B": "\u20136",
+            "C": "11",
+            "D": "\u201311"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the zeroes of x\u00b2 + kx + 6 are \u20132 and \u20133, then k is:",
+        "options": {
+            "A": "5",
+            "B": "\u20135",
+            "C": "2",
+            "D": "\u20132"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If p(x) = 3x\u00b2 \u2013 4x + 1, then p(\u20132) =",
+        "options": {
+            "A": "12 + 8 + 1",
+            "B": "21",
+            "C": "25",
+            "D": "3(4) + 8 + 1"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The equation of a line parallel to x-axis is:",
+        "options": {
+            "A": "x = a",
+            "B": "y = b",
+            "C": "x + y = c",
+            "D": "ax + by + c = 0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the lines represented by 2x + 3y = 5 and 4x + 6y = 10, then the system has:",
+        "options": {
+            "A": "Unique solution",
+            "B": "No solution",
+            "C": "Infinitely many solutions",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The solution of x \u2013 y = 2 and x + y = 4 is:",
+        "options": {
+            "A": "(3, 1)",
+            "B": "(1, 3)",
+            "C": "(2, 2)",
+            "D": "(4, 0)"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The pair of equations x + y = 5 and 2x + 2y = 10 is:",
+        "options": {
+            "A": "Consistent with unique solution",
+            "B": "Inconsistent",
+            "C": "Consistent with infinitely many solutions",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If a1/a2 \u2260 b1/b2, then the pair of linear equations has:",
+        "options": {
+            "A": "Unique solution",
+            "B": "No solution",
+            "C": "Infinitely many solutions",
+            "D": "Cannot say"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The point of intersection of lines x = 3 and y = 2 is:",
+        "options": {
+            "A": "(3, 2)",
+            "B": "(2, 3)",
+            "C": "(0, 0)",
+            "D": "(2, 2)"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The lines 2x \u2013 3y = 5 and 4x \u2013 6y = 10 are:",
+        "options": {
+            "A": "Parallel",
+            "B": "Intersecting",
+            "C": "Coincident",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If a1/a2 = b1/b2 \u2260 c1/c2, then the pair of linear equations is:",
+        "options": {
+            "A": "Consistent",
+            "B": "Inconsistent",
+            "C": "Dependent",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The solution of 3x + 2y = 11 and 2x + 3y = 13 is:",
+        "options": {
+            "A": "(3, 1)",
+            "B": "(1, 3)",
+            "C": "(2, 3)",
+            "D": "(3, 2)"
+        },
+        "correct": "D"
+    },
+    {
+        "question": "The lines x + 2y \u2013 4 = 0 and 2x + 4y \u2013 12 = 0 are:",
+        "options": {
+            "A": "Parallel",
+            "B": "Coincident",
+            "C": "Intersecting",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If two lines are coincident, then the number of solutions is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "Infinite"
+        },
+        "correct": "D"
+    },
+    {
+        "question": "The substitution method is used to solve:",
+        "options": {
+            "A": "Linear equations",
+            "B": "Quadratic equations",
+            "C": "Cubic equations",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the equations have unique solution, the lines are:",
+        "options": {
+            "A": "Parallel",
+            "B": "Coincident",
+            "C": "Intersecting",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "Which method uses cross multiplication to solve equations?",
+        "options": {
+            "A": "Graphical method",
+            "B": "Substitution method",
+            "C": "Elimination method",
+            "D": "Cross-multiplication method"
+        },
+        "correct": "D"
+    },
+    {
+        "question": "If the equations 2x + 3y = 5 and 3x + ky = 7 have no solution, then k =",
+        "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4.5",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The equations y = 3x + 1 and y = 3x \u2013 2 are:",
+        "options": {
+            "A": "Parallel",
+            "B": "Coincident",
+            "C": "Intersecting",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If a1/a2 = b1/b2 = c1/c2, then the equations are:",
+        "options": {
+            "A": "Inconsistent",
+            "B": "Consistent with infinite solutions",
+            "C": "Consistent with unique solution",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The graphical representation of a pair of inconsistent equations is:",
+        "options": {
+            "A": "Intersecting lines",
+            "B": "Parallel lines",
+            "C": "Coincident lines",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the pair of equations is consistent, it has:",
+        "options": {
+            "A": "At least one solution",
+            "B": "No solution",
+            "C": "Exactly one solution",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The elimination method is preferred when:",
+        "options": {
+            "A": "Coefficients of one variable are equal",
+            "B": "One equation is already solved for a variable",
+            "C": "Graph is needed",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The standard form of a quadratic equation is:",
+        "options": {
+            "A": "ax + b = 0",
+            "B": "ax\u00b2 + bx + c = 0",
+            "C": "ax\u00b3 + bx\u00b2 + c = 0",
+            "D": "ax\u00b2 + b = 0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If one root of the equation 2x\u00b2 + 3x + k = 0 is \u20132, then k is:",
+        "options": {
+            "A": "10",
+            "B": "4",
+            "C": "1",
+            "D": "\u20134"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The sum of the roots of x\u00b2 \u2013 7x + 12 = 0 is:",
+        "options": {
+            "A": "12",
+            "B": "\u201312",
+            "C": "7",
+            "D": "\u20137"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The product of the roots of 3x\u00b2 \u2013 5x + 2 = 0 is:",
+        "options": {
+            "A": "2/3",
+            "B": "3/2",
+            "C": "5/3",
+            "D": "\u20132/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The roots of the equation x\u00b2 \u2013 2x \u2013 8 = 0 are:",
+        "options": {
+            "A": "4, \u20132",
+            "B": "\u20134, 2",
+            "C": "2, 2",
+            "D": "\u20132, \u20134"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the discriminant (D) is zero, then the roots are:",
+        "options": {
+            "A": "Real and unequal",
+            "B": "Real and equal",
+            "C": "Imaginary",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The value of discriminant D for x\u00b2 + 4x + 4 = 0 is:",
+        "options": {
+            "A": "0",
+            "B": "4",
+            "C": "8",
+            "D": "16"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the roots are real and distinct, then D is:",
+        "options": {
+            "A": "> 0",
+            "B": "< 0",
+            "C": "= 0",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The roots of x\u00b2 + 5x + 6 = 0 are:",
+        "options": {
+            "A": "2, 3",
+            "B": "\u20132, \u20133",
+            "C": "\u20133, 2",
+            "D": "3, \u20132"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If 3 and \u20132 are roots of ax\u00b2 + 5x + c = 0, then a and c are:",
+        "options": {
+            "A": "a=1, c=\u20136",
+            "B": "a=1, c=6",
+            "C": "a=2, c=\u20136",
+            "D": "a=1, c=\u20135"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The roots of 4x\u00b2 \u2013 4x + 1 = 0 are:",
+        "options": {
+            "A": "Equal",
+            "B": "Unequal",
+            "C": "Imaginary",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The sum of the roots of 5x\u00b2 + 3x \u2013 2 = 0 is:",
+        "options": {
+            "A": "\u20133/5",
+            "B": "3/5",
+            "C": "\u20135/3",
+            "D": "5/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The product of the roots of x\u00b2 \u2013 9 = 0 is:",
+        "options": {
+            "A": "\u20139",
+            "B": "9",
+            "C": "0",
+            "D": "\u20133"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The quadratic equation having roots 4 and \u20135 is:",
+        "options": {
+            "A": "x\u00b2 + x \u2013 20 = 0",
+            "B": "x\u00b2 \u2013 x \u2013 20 = 0",
+            "C": "x\u00b2 + x + 20 = 0",
+            "D": "x\u00b2 \u2013 x + 20 = 0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If \u03b1 and \u03b2 are the roots of 2x\u00b2 \u2013 3x + 6 = 0, then \u03b1 + \u03b2 =",
+        "options": {
+            "A": "3/2",
+            "B": "\u20133/2",
+            "C": "\u20132/3",
+            "D": "2/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If \u03b1 and \u03b2 are roots of 2x\u00b2 + 5x \u2013 3 = 0, then \u03b1\u03b2 =",
+        "options": {
+            "A": "\u20133/2",
+            "B": "3/2",
+            "C": "\u20132/3",
+            "D": "2/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "Which of the following equations has imaginary roots?",
+        "options": {
+            "A": "x\u00b2 \u2013 4x + 4 = 0",
+            "B": "x\u00b2 + 4x + 5 = 0",
+            "C": "x\u00b2 \u2013 5x + 6 = 0",
+            "D": "x\u00b2 \u2013 x \u2013 6 = 0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The quadratic equation whose roots are reciprocals of 2 and 3 is:",
+        "options": {
+            "A": "6x\u00b2 \u2013 5x + 1 = 0",
+            "B": "6x\u00b2 + 5x + 1 = 0",
+            "C": "3x\u00b2 \u2013 5x + 2 = 0",
+            "D": "2x\u00b2 \u2013 5x + 3 = 0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The roots of 9x\u00b2 \u2013 12x + 4 = 0 are:",
+        "options": {
+            "A": "Real and equal",
+            "B": "Real and unequal",
+            "C": "Imaginary",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If one root of 2x\u00b2 + kx + 3 = 0 is \u20131, then k is:",
+        "options": {
+            "A": "1",
+            "B": "\u20131",
+            "C": "5",
+            "D": "\u20135"
+        },
+        "correct": "D"
+    },
+    {
+        "question": "The nth term of an AP is given by:",
+        "options": {
+            "A": "a + (n \u2013 1)d",
+            "B": "a + nd",
+            "C": "a \u2013 nd",
+            "D": "a + n/d"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the first term is 5 and the common difference is 3, the 10th term is:",
+        "options": {
+            "A": "32",
+            "B": "33",
+            "C": "34",
+            "D": "35"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The sum of first n terms of an AP is:",
+        "options": {
+            "A": "n/2 [2a + (n \u2013 1)d]",
+            "B": "n/2 [a + d]",
+            "C": "a + (n \u2013 1)d",
+            "D": "n \u00d7 a"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the 4th term of an AP is 20 and the 7th term is 26, the common difference is:",
+        "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If a = 2, d = 5, then the 15th term is:",
+        "options": {
+            "A": "72",
+            "B": "77",
+            "C": "78",
+            "D": "82"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The sum of first 10 natural numbers is:",
+        "options": {
+            "A": "45",
+            "B": "50",
+            "C": "55",
+            "D": "60"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "In the AP 3, 8, 13, \u2026, the 20th term is:",
+        "options": {
+            "A": "93",
+            "B": "98",
+            "C": "103",
+            "D": "108"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the sum of first 5 terms is 40 and the common difference is 2, the first term is:",
+        "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "7"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the nth term of an AP is 7n \u2013 3, then the first term is:",
+        "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5",
+            "D": "7"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If an AP has a = 10 and d = \u20133, then its 5th term is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "\u20131",
+            "D": "2"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the sum of first n terms is 5n\u00b2, the common difference is:",
+        "options": {
+            "A": "5",
+            "B": "10",
+            "C": "n",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In the AP 15, 13, 11, \u2026, the 10th term is:",
+        "options": {
+            "A": "\u20133",
+            "B": "\u20135",
+            "C": "\u20137",
+            "D": "\u20139"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If S\u2081\u2080 = 100 and a = 7, then d is:",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The common difference of the AP whose nth term is 4n + 1 is:",
+        "options": {
+            "A": "1",
+            "B": "4",
+            "C": "5",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the first term is 1 and the last term is 100 in an AP with d = 1, the number of terms is:",
+        "options": {
+            "A": "99",
+            "B": "100",
+            "C": "101",
+            "D": "102"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The AP 7, 10, 13, \u2026 is:",
+        "options": {
+            "A": "Increasing",
+            "B": "Decreasing",
+            "C": "Constant",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If a = 4, d = 6, and n = 8, the sum of first n terms is:",
+        "options": {
+            "A": "208",
+            "B": "216",
+            "C": "224",
+            "D": "232"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If a = 12 and d = \u20132, the 10th term is:",
+        "options": {
+            "A": "\u20136",
+            "B": "\u20138",
+            "C": "\u201310",
+            "D": "\u201312"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The nth term of the AP 2, 6, 10, \u2026 is:",
+        "options": {
+            "A": "4n \u2013 2",
+            "B": "4n",
+            "C": "2n",
+            "D": "2n \u2013 4"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the sum of first n terms is 3n\u00b2 + 2n, then the first term is:",
+        "options": {
+            "A": "3",
+            "B": "5",
+            "C": "2",
+            "D": "4"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In a right-angled triangle, the square of the hypotenuse is equal to:",
+        "options": {
+            "A": "Sum of squares of other two sides",
+            "B": "Difference of squares of other two sides",
+            "C": "Product of other two sides",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "Two triangles are similar if their:",
+        "options": {
+            "A": "Corresponding angles are equal",
+            "B": "Corresponding sides are proportional",
+            "C": "Both A and B",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "In \u0394ABC, if AB/DE = BC/EF = CA/FD, then the triangles are:",
+        "options": {
+            "A": "Congruent",
+            "B": "Similar",
+            "C": "Equal area",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If a line is drawn parallel to one side of a triangle, it divides the other two sides:",
+        "options": {
+            "A": "Equally",
+            "B": "Proportionally",
+            "C": "Unequally",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "Pythagoras theorem is applicable in:",
+        "options": {
+            "A": "Any triangle",
+            "B": "Equilateral triangle",
+            "C": "Right-angled triangle",
+            "D": "Isosceles triangle"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The ratio of areas of two similar triangles is equal to:",
+        "options": {
+            "A": "Ratio of their sides",
+            "B": "Square of ratio of their sides",
+            "C": "Cube of ratio of their sides",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If \u0394ABC ~ \u0394PQR and AB/PQ = 3/5, then area(\u0394ABC) : area(\u0394PQR) is:",
+        "options": {
+            "A": "3:5",
+            "B": "9:25",
+            "C": "5:3",
+            "D": "25:9"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In a right triangle, if one acute angle is 30\u00b0, the other acute angle is:",
+        "options": {
+            "A": "30\u00b0",
+            "B": "45\u00b0",
+            "C": "60\u00b0",
+            "D": "90\u00b0"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The side opposite to the right angle in a right triangle is called:",
+        "options": {
+            "A": "Base",
+            "B": "Height",
+            "C": "Hypotenuse",
+            "D": "Median"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "In \u0394ABC, if AD is the median, then:",
+        "options": {
+            "A": "BD = DC",
+            "B": "AB = AC",
+            "C": "AB = BC",
+            "D": "BC = AC"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The basic proportionality theorem is also called:",
+        "options": {
+            "A": "Pythagoras theorem",
+            "B": "Thales theorem",
+            "C": "Mid-point theorem",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If \u0394ABC ~ \u0394DEF and AB = 6 cm, DE = 9 cm, then BC/EF =",
+        "options": {
+            "A": "2/3",
+            "B": "3/2",
+            "C": "4/3",
+            "D": "3/4"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the perimeters of two similar triangles are in the ratio 5:7, then their areas are in ratio:",
+        "options": {
+            "A": "5:7",
+            "B": "25:49",
+            "C": "7:5",
+            "D": "49:25"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The length of the median of an equilateral triangle with side a is:",
+        "options": {
+            "A": "a/2",
+            "B": "a\u221a3/2",
+            "C": "a\u221a2/2",
+            "D": "a\u221a3"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The centroid divides each median in the ratio:",
+        "options": {
+            "A": "1:2",
+            "B": "2:1",
+            "C": "1:1",
+            "D": "3:1"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the sides of a triangle are 5 cm, 12 cm, and 13 cm, then it is a:",
+        "options": {
+            "A": "Right-angled triangle",
+            "B": "Equilateral triangle",
+            "C": "Isosceles triangle",
+            "D": "Scalene triangle"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "In \u0394PQR, if PQ\u00b2 = PR\u00b2 + QR\u00b2, then \u2220R is:",
+        "options": {
+            "A": "Acute",
+            "B": "Obtuse",
+            "C": "Right angle",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The incenter of a triangle is the point of intersection of:",
+        "options": {
+            "A": "Medians",
+            "B": "Angle bisectors",
+            "C": "Perpendicular bisectors",
+            "D": "Altitudes"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The circumcenter of a right triangle lies:",
+        "options": {
+            "A": "Inside the triangle",
+            "B": "On the hypotenuse",
+            "C": "Outside the triangle",
+            "D": "On the base"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In a triangle, the sum of any two sides is:",
+        "options": {
+            "A": "Greater than the third side",
+            "B": "Equal to the third side",
+            "C": "Less than the third side",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The distance between points (x1, y1) and (x2, y2) is given by:",
+        "options": {
+            "A": "\u221a[(x2 \u2013 x1)\u00b2 + (y2 \u2013 y1)\u00b2]",
+            "B": "(x2 \u2013 x1) + (y2 \u2013 y1)",
+            "C": "|x2 \u2013 x1| + |y2 \u2013 y1|",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The coordinates of the midpoint of the line joining (x1, y1) and (x2, y2) are:",
+        "options": {
+            "A": "((x1 + x2)/2, (y1 + y2)/2)",
+            "B": "(x1 + x2, y1 + y2)",
+            "C": "((x1 \u2013 x2)/2, (y1 \u2013 y2)/2)",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The slope of a line parallel to x-axis is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "Infinity",
+            "D": "Undefined"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The slope of a line perpendicular to y-axis is:",
+        "options": {
+            "A": "0",
+            "B": "Undefined",
+            "C": "Infinity",
+            "D": "1"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The distance between (3, \u20132) and (7, 1) is:",
+        "options": {
+            "A": "5",
+            "B": "4",
+            "C": "6",
+            "D": "3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The centroid of a triangle with vertices (x1, y1), (x2, y2), (x3, y3) is:",
+        "options": {
+            "A": "((x1 + x2 + x3)/3, (y1 + y2 + y3)/3)",
+            "B": "(x1 + x2 + x3, y1 + y2 + y3)",
+            "C": "((x1 \u2013 x2 \u2013 x3)/3, (y1 \u2013 y2 \u2013 y3)/3)",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the distance between (2, 3) and (x, 7) is 5, then x is:",
+        "options": {
+            "A": "5 or \u20131",
+            "B": "5 or 1",
+            "C": "4 or \u20132",
+            "D": "4 or 0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The coordinates of the point dividing the segment joining (2, \u20133) and (4, 1) in ratio 1:3 are:",
+        "options": {
+            "A": "(2.5, \u20132)",
+            "B": "(2.5, \u20131)",
+            "C": "(3, \u20131)",
+            "D": "(3, \u20132)"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The slope of the line joining (1, 2) and (3, 8) is:",
+        "options": {
+            "A": "3",
+            "B": "4",
+            "C": "2",
+            "D": "5"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If a line passes through (2, 3) and is parallel to y-axis, then its equation is:",
+        "options": {
+            "A": "x = 2",
+            "B": "y = 3",
+            "C": "x + y = 5",
+            "D": "y \u2013 3 = 0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The distance between (0, 0) and (6, 8) is:",
+        "options": {
+            "A": "8",
+            "B": "10",
+            "C": "12",
+            "D": "6"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The coordinates of the midpoint of (\u20134, 5) and (2, \u20133) are:",
+        "options": {
+            "A": "(\u20131, 1)",
+            "B": "(1, \u20131)",
+            "C": "(-1, -4)",
+            "D": "(0, 0)"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The section formula is used to find:",
+        "options": {
+            "A": "Length of a line segment",
+            "B": "Slope of a line",
+            "C": "Coordinates dividing a segment",
+            "D": "Equation of a line"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If slope of a line is m and it passes through (x1, y1), then its equation is:",
+        "options": {
+            "A": "y \u2013 y1 = m(x \u2013 x1)",
+            "B": "y = mx + c",
+            "C": "x \u2013 x1 = m(y \u2013 y1)",
+            "D": "y + y1 = m(x + x1)"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The slope of a line joining two identical points is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "Infinity/Undefined",
+            "D": "None"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "If the points (1, 2), (3, 6), and (k, 8) are collinear, then k is:",
+        "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "7"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The coordinates of the centroid of the triangle with vertices (0, 0), (6, 0), (0, 6) are:",
+        "options": {
+            "A": "(2, 2)",
+            "B": "(3, 3)",
+            "C": "(4, 4)",
+            "D": "(1, 1)"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The perpendicular distance from point (x1, y1) to line ax + by + c = 0 is:",
+        "options": {
+            "A": "|ax1 + by1 + c| / \u221a(a\u00b2 + b\u00b2)",
+            "B": "|ax1 \u2013 by1 + c| / \u221a(a\u00b2 + b\u00b2)",
+            "C": "|ax1 + by1 \u2013 c| / \u221a(a\u00b2 + b\u00b2)",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The equation of x-axis is:",
+        "options": {
+            "A": "y = 0",
+            "B": "x = 0",
+            "C": "y = x",
+            "D": "x + y = 0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The equation of y-axis is:",
+        "options": {
+            "A": "y = 0",
+            "B": "x = 0",
+            "C": "y = x",
+            "D": "x + y = 0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In a right triangle, sin \u03b8 is defined as:",
+        "options": {
+            "A": "Base/Hypotenuse",
+            "B": "Perpendicular/Hypotenuse",
+            "C": "Perpendicular/Base",
+            "D": "Hypotenuse/Base"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In a right triangle, cos \u03b8 is defined as:",
+        "options": {
+            "A": "Base/Hypotenuse",
+            "B": "Perpendicular/Hypotenuse",
+            "C": "Hypotenuse/Base",
+            "D": "Perpendicular/Base"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of sin 0\u00b0 is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "\u221a3/2"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of cos 90\u00b0 is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "\u221a3/2"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of tan 45\u00b0 is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "\u221a3",
+            "D": "1/\u221a3"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The value of sin 30\u00b0 is:",
+        "options": {
+            "A": "1/2",
+            "B": "\u221a3/2",
+            "C": "1",
+            "D": "0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of cos 60\u00b0 is:",
+        "options": {
+            "A": "1/2",
+            "B": "\u221a3/2",
+            "C": "1",
+            "D": "0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of tan 60\u00b0 is:",
+        "options": {
+            "A": "\u221a3",
+            "B": "1/\u221a3",
+            "C": "1",
+            "D": "0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The reciprocal of sin \u03b8 is:",
+        "options": {
+            "A": "cos \u03b8",
+            "B": "sec \u03b8",
+            "C": "cosec \u03b8",
+            "D": "cot \u03b8"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The reciprocal of cos \u03b8 is:",
+        "options": {
+            "A": "sec \u03b8",
+            "B": "cosec \u03b8",
+            "C": "tan \u03b8",
+            "D": "cot \u03b8"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The reciprocal of tan \u03b8 is:",
+        "options": {
+            "A": "cot \u03b8",
+            "B": "sec \u03b8",
+            "C": "cosec \u03b8",
+            "D": "sin \u03b8"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The identity sec\u00b2\u03b8 \u2013 tan\u00b2\u03b8 =",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "sin\u00b2\u03b8",
+            "D": "cos\u00b2\u03b8"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The identity 1 + cot\u00b2\u03b8 =",
+        "options": {
+            "A": "cosec\u00b2\u03b8",
+            "B": "sec\u00b2\u03b8",
+            "C": "sin\u00b2\u03b8",
+            "D": "cos\u00b2\u03b8"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of sin\u00b230\u00b0 + cos\u00b230\u00b0 is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "3/4"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The value of sin 90\u00b0 \u00d7 cos 0\u00b0 is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "\u221a3/2"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If sin \u03b8 = 3/5, then cos \u03b8 is:",
+        "options": {
+            "A": "4/5",
+            "B": "3/5",
+            "C": "\u221a3/2",
+            "D": "1/2"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If cos \u03b8 = 12/13, then sin \u03b8 is:",
+        "options": {
+            "A": "5/13",
+            "B": "12/13",
+            "C": "\u221a3/2",
+            "D": "1/2"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of tan\u00b245\u00b0 + sec\u00b230\u00b0 is:",
+        "options": {
+            "A": "1 + 4/3",
+            "B": "2 + 4/3",
+            "C": "1 + 1/3",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The value of cosec 90\u00b0 is:",
+        "options": {
+            "A": "1",
+            "B": "0",
+            "C": "\u221e",
+            "D": "Not defined"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The value of sec 0\u00b0 is:",
+        "options": {
+            "A": "1",
+            "B": "0",
+            "C": "\u221e",
+            "D": "Not defined"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The angle of elevation is the angle between:",
+        "options": {
+            "A": "Horizontal and line of sight when object is above eye level",
+            "B": "Horizontal and line of sight when object is below eye level",
+            "C": "Two horizontal lines",
+            "D": "Two vertical lines"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The angle of depression is measured:",
+        "options": {
+            "A": "Upwards from horizontal",
+            "B": "Downwards from horizontal",
+            "C": "Vertically downwards",
+            "D": "Vertically upwards"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the height of a tower is h and the distance from the point of observation to the base is d, then tan \u03b8 =",
+        "options": {
+            "A": "h/d",
+            "B": "d/h",
+            "C": "h \u00d7 d",
+            "D": "d \u2013 h"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A man is standing 30 m away from the foot of a tower. The angle of elevation to the top is 45\u00b0. The height of the tower is:",
+        "options": {
+            "A": "15 m",
+            "B": "30 m",
+            "C": "45 m",
+            "D": "60 m"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If tan \u03b8 = 1, then the angle of elevation is:",
+        "options": {
+            "A": "30\u00b0",
+            "B": "45\u00b0",
+            "C": "60\u00b0",
+            "D": "90\u00b0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "A ladder 5 m long is leaning against a wall. The foot is 3 m away from the wall. The height it reaches is:",
+        "options": {
+            "A": "3 m",
+            "B": "4 m",
+            "C": "5 m",
+            "D": "6 m"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the angle of elevation of the top of a pole from a point 20 m away is 30\u00b0, the height of the pole is:",
+        "options": {
+            "A": "10\u221a3 m",
+            "B": "20\u221a3 m",
+            "C": "10 m",
+            "D": "20 m"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The height of a tree is found to be 8 m when measured from a distance of 8 m from its base. The angle of elevation is:",
+        "options": {
+            "A": "30\u00b0",
+            "B": "45\u00b0",
+            "C": "60\u00b0",
+            "D": "90\u00b0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the shadow of a tower is equal to its height, the angle of elevation of the sun is:",
+        "options": {
+            "A": "30\u00b0",
+            "B": "45\u00b0",
+            "C": "60\u00b0",
+            "D": "90\u00b0"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the height of a building is 20 m and the angle of elevation of its top from a point on the ground is 60\u00b0, the distance from the point to the base is:",
+        "options": {
+            "A": "10\u221a3 m",
+            "B": "20\u221a3 m",
+            "C": "30 m",
+            "D": "40 m"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the angle of depression from the top of a tower to a point on the ground is 45\u00b0, and the height of the tower is 50 m, then the distance to the point is:",
+        "options": {
+            "A": "25 m",
+            "B": "50 m",
+            "C": "75 m",
+            "D": "100 m"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "In solving height and distance problems, the triangle formed is usually:",
+        "options": {
+            "A": "Equilateral",
+            "B": "Right-angled",
+            "C": "Isosceles",
+            "D": "Scalene"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the top of a building is viewed from two points in line with the building at distances d1 and d2, then the problem can be solved using:",
+        "options": {
+            "A": "Law of Sines",
+            "B": "Trigonometric Ratios",
+            "C": "Law of Cosines",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The angle formed between the horizontal and the line of sight to an object below the eye level is:",
+        "options": {
+            "A": "Angle of elevation",
+            "B": "Angle of depression",
+            "C": "Right angle",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If the height of a flagpole is 12 m and its shadow is 12\u221a3 m long, the angle of elevation of the sun is:",
+        "options": {
+            "A": "30\u00b0",
+            "B": "45\u00b0",
+            "C": "60\u00b0",
+            "D": "90\u00b0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A man is looking at the top of a tree at an angle of 60\u00b0. If he is standing 5 m from the base, the height of the tree is:",
+        "options": {
+            "A": "5\u221a3 m",
+            "B": "10 m",
+            "C": "15 m",
+            "D": "10\u221a3 m"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If the height of a tower is h and the distance from a point to the base is h\u221a3, the angle of elevation is:",
+        "options": {
+            "A": "30\u00b0",
+            "B": "45\u00b0",
+            "C": "60\u00b0",
+            "D": "90\u00b0"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The angle of depression from a lighthouse to a boat is 30\u00b0. If the lighthouse is 100 m high, the distance of the boat from the lighthouse is:",
+        "options": {
+            "A": "100\u221a3 m",
+            "B": "50\u221a3 m",
+            "C": "200 m",
+            "D": "100 m"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A man standing at the top of a 20 m tower observes the top of a building at an angle of elevation of 30\u00b0 and its base at an angle of depression of 60\u00b0. The height of the building is:",
+        "options": {
+            "A": "10 m",
+            "B": "20 m",
+            "C": "30 m",
+            "D": "40 m"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "The height of a balloon is 50 m and the angle of elevation from a point on the ground is 45\u00b0. The horizontal distance from the point to the balloon is:",
+        "options": {
+            "A": "25 m",
+            "B": "50 m",
+            "C": "75 m",
+            "D": "100 m"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The probability of a sure event is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "None"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The probability of an impossible event is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "None"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The sum of probabilities of all outcomes of an experiment is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "Greater than 1",
+            "D": "Less than 1"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If P(E) = 0.25, then P(not E) is:",
+        "options": {
+            "A": "0.25",
+            "B": "0.5",
+            "C": "0.75",
+            "D": "1"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "A coin is tossed once. The probability of getting a head is:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1/2",
+            "D": "1/4"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "A die is rolled once. The probability of getting an even number is:",
+        "options": {
+            "A": "1/6",
+            "B": "1/3",
+            "C": "1/2",
+            "D": "2/3"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "A die is rolled once. The probability of getting a number greater than 4 is:",
+        "options": {
+            "A": "1/3",
+            "B": "1/2",
+            "C": "1/6",
+            "D": "2/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "Two coins are tossed. The probability of getting two heads is:",
+        "options": {
+            "A": "1/4",
+            "B": "1/2",
+            "C": "1/3",
+            "D": "2/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "Two coins are tossed. The probability of getting at least one head is:",
+        "options": {
+            "A": "1/4",
+            "B": "1/2",
+            "C": "3/4",
+            "D": "2/3"
+        },
+        "correct": "C"
+    },
+    {
+        "question": "A card is drawn from a well-shuffled pack. The probability of getting a king is:",
+        "options": {
+            "A": "1/13",
+            "B": "1/26",
+            "C": "1/52",
+            "D": "4/13"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A card is drawn from a deck. The probability of getting a red card is:",
+        "options": {
+            "A": "1/2",
+            "B": "1/3",
+            "C": "1/4",
+            "D": "2/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A card is drawn from a deck. The probability of getting an ace is:",
+        "options": {
+            "A": "1/13",
+            "B": "1/26",
+            "C": "1/52",
+            "D": "4/13"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A bag contains 3 red and 5 blue balls. The probability of drawing a red ball is:",
+        "options": {
+            "A": "3/8",
+            "B": "5/8",
+            "C": "1/2",
+            "D": "1/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "A bag contains 6 white and 4 black balls. The probability of drawing a black ball is:",
+        "options": {
+            "A": "2/5",
+            "B": "3/5",
+            "C": "1/2",
+            "D": "1/3"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "If P(E) = 0.6, then P(not E) =",
+        "options": {
+            "A": "0.4",
+            "B": "0.5",
+            "C": "0.3",
+            "D": "0.2"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "When a die is rolled, the probability of getting a prime number is:",
+        "options": {
+            "A": "1/3",
+            "B": "1/2",
+            "C": "2/3",
+            "D": "1/6"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The probability of getting a leap year with 53 Sundays is:",
+        "options": {
+            "A": "1/7",
+            "B": "2/7",
+            "C": "3/7",
+            "D": "4/7"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "If a number is chosen at random from 1 to 10, the probability of getting an odd number is:",
+        "options": {
+            "A": "1/2",
+            "B": "2/5",
+            "C": "3/5",
+            "D": "4/5"
+        },
+        "correct": "A"
+    },
+    {
+        "question": "The probability of getting the letter 'A' when a letter is chosen from the word 'MATHEMATICS' is:",
+        "options": {
+            "A": "2/11",
+            "B": "3/11",
+            "C": "4/11",
+            "D": "5/11"
+        },
+        "correct": "B"
+    },
+    {
+        "question": "The probability of drawing a queen from a standard deck of 52 cards is:",
+        "options": {
+            "A": "1/13",
+            "B": "1/26",
+            "C": "1/52",
+            "D": "4/13"
+        },
+        "correct": "A"
+    }
 ]

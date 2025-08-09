@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,200 +7,267 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #74ebd5, #9face6);
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
       margin: 0;
       padding: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow-x: hidden;
     }
-
-    .container {
-      width: 90%;
-      max-width: 600px;
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px 25px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      animation: fadeIn 0.5s ease;
-      box-sizing: border-box;
+    #quiz-container {
+      max-width: 700px;
+      margin: 80px auto;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00000077;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
     h1, h2 {
-      margin-bottom: 20px;
-      color: #333;
-      font-size: 1.6em;
+      text-align: center;
     }
-
-    input[type="text"] {
-      padding: 12px;
-      width: 100%;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-top: 10px;
-      box-sizing: border-box;
-    }
-
-    button {
-      padding: 12px 25px;
-      margin: 12px 6px;
-      border: none;
-      background: #4CAF50;
-      color: white;
-      font-size: 16px;
+    .option {
+      background-color: #ffffff11;
+      border: 2px solid white;
       border-radius: 10px;
+      padding: 10px 20px;
+      margin: 10px 0;
       cursor: pointer;
-      transition: background 0.3s ease;
-      width: auto;
-      max-width: 90%;
+      transition: 0.3s ease;
     }
-
-    button:hover {
-      background: #45a049;
+    .option:hover {
+      background-color: #ffffff33;
     }
-
-    .option-btn {
+    #next-btn {
       display: block;
-      margin: 10px auto;
-      width: 100%;
-      background-color: #2196F3;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #ffffff22;
+      border: 2px solid white;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
       font-size: 16px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      box-sizing: border-box;
     }
-
-    .option-btn:hover {
-      background-color: #1976D2;
+    #progress {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background-color: #00000044;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      box-shadow: 0 0 10px #00000088;
     }
-
-    .hide {
-      display: none;
-    }
-
-    #score-text {
-      font-size: 18px;
-      color: #333;
+    #progress-bar {
+      height: 10px;
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
       margin-top: 10px;
     }
-
-    @media (max-width: 480px) {
-      button {
-        font-size: 14px;
-        padding: 10px 20px;
-      }
-
-      .container {
-        padding: 20px 15px;
-      }
-
-      h1, h2 {
-        font-size: 1.4em;
-      }
+    #progress-bar-inner {
+      height: 100%;
+      background: limegreen;
+      width: 0%;
+      transition: width 0.3s ease-in-out;
+    }
+    #end-screen {
+      text-align: center;
+      margin-top: 80px;
+    }
+    #end-screen button {
+      margin: 10px;
+      padding: 10px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      background-color: #ffffff33;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    #end-screen button:hover {
+      background-color: #ffffff55;
+    }
+    #name-screen {
+      text-align: center;
+      margin-top: 100px;
+    }
+    #name-input {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      width: 250px;
+      text-align: center;
+    }
+    #start-btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 12px;
+      border: none;
+      background-color: #ffffff33;
+      color: white;
+      cursor: pointer;
+    }
+    #start-btn:hover {
+      background-color: #ffffff55;
     }
   </style>
 </head>
 <body>
-  <div class="container" id="welcome-screen">
+
+  <!-- Name Screen -->
+  <div id="name-screen">
     <h1>Welcome to the Quiz!</h1>
-    <input type="text" id="username" placeholder="Enter your name" />
-    <br><br>
-    <button onclick="startQuiz()">Start Quiz</button>
+    <p>Please enter your name to begin:</p>
+    <input type="text" id="name-input" placeholder="Enter your name" />
+    <br>
+    <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
   </div>
 
-  <div class="container hide" id="quiz-screen">
-    <h2 id="question"></h2>
-    <div id="options"></div>
-    <button onclick="nextQuestion()">Next</button>
+  <!-- Quiz Progress -->
+  <div id="progress" style="display: none;">
+    ✅ Correct: 0 | ❌ Incorrect: 0<br>
+    <span id="qprogress">Question 1/1</span>
+    <div id="progress-bar"><div id="progress-bar-inner"></div></div>
   </div>
 
-  <div class="container hide" id="end-screen">
-    <h2>Quiz Complete!</h2>
-    <p id="score-text"></p>
-    <button onclick="playAgain()">Play Again</button>
-    <button onclick="goHome()">Go to Home</button>
+  <!-- Main Quiz Container -->
+  <div id="quiz-container" style="display: none;">
+    <h1>Quiz</h1>
+    <div id="question-container">
+      <div id="question">Loading...</div>
+      <div id="options"></div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="end-screen" style="display: none;">
+      <h2>Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <button onclick="downloadResults()">Download Result</button>
+      <button onclick="restartQuiz()">Play Again</button>
+      <button onclick="goToHome()">Go to Home</button>
+    </div>
   </div>
+
+  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
 
   <script>
-    let username = "";
+    let questions = [];
     let current = 0;
     let score = 0;
-    let questions = [];
-    let answers = [];
-    let startTime;
+    let correctCount = 0;
+    let incorrectCount = 0;
+    let questionAnswered = false;
+    let userName = '';
+    let userResponses = [];
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const jsonFile = urlParams.get('json') || 'questions_cs.json';
+
+    fetch(`https://singla1209.github.io/Quiz_App/${jsonFile}`)
+      .then(res => res.json())
+      .then(data => {
+        questions = shuffleArray(data);
+      });
 
     function startQuiz() {
-      const nameInput = document.getElementById("username").value.trim();
+      const nameInput = document.getElementById("name-input").value.trim();
       if (!nameInput) {
         alert("Please enter your name.");
         return;
       }
-      username = nameInput;
-      document.getElementById("welcome-screen").classList.add("hide");
-      document.getElementById("quiz-screen").classList.remove("hide");
-      fetchQuestions();
-    }
-
-    function fetchQuestions() {
-      fetch('https://singla1209.github.io/Quiz_App/questions.json')
-        .then(res => {
-          if (!res.ok) throw new Error("Failed to load");
-          return res.json();
-        })
-        .then(data => {
-          questions = data;
-          current = 0;
-          score = 0;
-          answers = [];
-          startTime = new Date();
-          showQuestion();
-        })
-        .catch(err => {
-          alert("Error loading questions.");
-          console.error(err);
-        });
+      userName = nameInput;
+      document.getElementById("name-screen").style.display = "none";
+      document.getElementById("quiz-container").style.display = "block";
+      document.getElementById("progress").style.display = "block";
+      showQuestion();
     }
 
     function showQuestion() {
+      questionAnswered = false;
       const q = questions[current];
-      document.getElementById("question").textContent = q.question;
-      document.getElementById("options").innerHTML = "";
+      document.getElementById("question").innerText = `Q${current + 1}. ${q.question}`;
+
+      const optionsDiv = document.getElementById("options");
+      optionsDiv.innerHTML = "";
+
       for (let key in q.options) {
-        const btn = document.createElement("button");
-        btn.className = "option-btn";
-        btn.textContent = `${key}: ${q.options[key]}`;
-        btn.onclick = () => checkAnswer(key);
-        document.getElementById("options").appendChild(btn);
+        const div = document.createElement("div");
+        div.className = "option";
+        div.innerText = `${key}: ${q.options[key]}`;
+        div.onclick = () => checkAnswer(key, div);
+        optionsDiv.appendChild(div);
       }
+
+      document.getElementById("qprogress").innerText = `Question ${current + 1}/${questions.length}`;
+      document.getElementById("progress-bar-inner").style.width = ((current + 1) / questions.length) * 100 + "%";
     }
 
-    function checkAnswer(selected) {
+    function checkAnswer(selected, divElement) {
+      if (questionAnswered) return;
+      questionAnswered = true;
+
       const correct = questions[current].correct;
-      answers.push({
-        question: questions[current].question,
-        selected: selected,
-        correct: correct
-      });
-      if (selected === correct) score++;
-      document.querySelectorAll('.option-btn').forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent.startsWith(correct)) {
-          btn.style.background = 'green';
-        } else if (btn.textContent.startsWith(selected)) {
-          btn.style.background = 'red';
+      const allOptions = document.querySelectorAll(".option");
+      allOptions.forEach(btn => {
+        btn.style.pointerEvents = "none";
+        if (btn.innerText.startsWith(correct + ":")) {
+          btn.style.backgroundColor = "green";
+        } else if (btn === divElement) {
+          btn.style.backgroundColor = "red";
         }
       });
+
+      const questionText = questions[current].question;
+      const selectedAnswer = questions[current].options[selected];
+      const correctAnswer = questions[current].options[correct];
+
+      userResponses.push({
+        question: questionText,
+        selected: selectedAnswer || "No answer",
+        correct: correctAnswer
+      });
+
+      if (selected === correct) {
+        score++;
+        correctCount++;
+        document.getElementById("correct-sound").play();
+      } else {
+        incorrectCount++;
+        document.getElementById("wrong-sound").play();
+      }
+
+      updateLiveScore();
+    }
+
+    function updateLiveScore() {
+      document.getElementById("progress").innerHTML =
+        `✅ Correct: ${correctCount} | ❌ Incorrect: ${incorrectCount}<br>
+         <span id="qprogress">Question ${current + 1}/${questions.length}</span>
+         <div id="progress-bar"><div id="progress-bar-inner" style="width: ${(current + 1) / questions.length * 100}%"></div></div>`;
     }
 
     function nextQuestion() {
+      if (!questionAnswered) {
+        userResponses.push({
+          question: questions[current].question,
+          selected: "No answer",
+          correct: questions[current].options[questions[current].correct]
+        });
+        incorrectCount++;
+        updateLiveScore();
+      }
+
       if (current < questions.length - 1) {
         current++;
         showQuestion();
@@ -210,53 +277,38 @@
     }
 
     function showEndScreen() {
-      const endTime = new Date();
-      const timeTaken = Math.round((endTime - startTime) / 1000);
-      const timestamp = new Date().toLocaleString();
-
-      document.getElementById("quiz-screen").classList.add("hide");
-      document.getElementById("end-screen").classList.remove("hide");
-      document.getElementById("score-text").innerText =
-        `${username}, your score is ${score}/${questions.length}`;
-
-      const entry = {
-        name: username,
-        score: score,
-        total: questions.length,
-        timestamp: timestamp,
-        timeTaken: timeTaken + " sec",
-        answers: answers
-      };
-
-      saveToLeaderboard(entry);
+      document.getElementById("question-container").style.display = "none";
+      document.getElementById("end-screen").style.display = "block";
+      document.getElementById("final-score").innerText = `${userName}, you got ${score} out of ${questions.length} correct.`;
     }
 
-    function saveToLeaderboard(entry) {
-      let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
-      let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
+    function restartQuiz() {
+      current = 0;
+      score = 0;
+      correctCount = 0;
+      incorrectCount = 0;
+      userResponses = [];
+      document.getElementById("end-screen").style.display = "none";
+      document.getElementById("question-container").style.display = "block";
+      showQuestion();
+      updateLiveScore();
+    }
 
-      leaderboard.push({
-        name: entry.name,
-        score: entry.score,
-        total: entry.total,
-        timestamp: entry.timestamp,
-        timeTaken: entry.timeTaken
+    function goToHome() {
+      window.location.href = "index.html";
+    }
+
+    function downloadResults() {
+      let csv = `Name:,${userName}\n\nQuestion,Your Answer,Correct Answer\n`;
+      userResponses.forEach(r => {
+        csv += `"${r.question}","${r.selected}","${r.correct}"\n`;
       });
 
-      submissions.push(entry);
-
-      localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
-      localStorage.setItem("submissions", JSON.stringify(submissions));
-    }
-
-    function playAgain() {
-      document.getElementById("end-screen").classList.add("hide");
-      document.getElementById("welcome-screen").classList.remove("hide");
-      document.getElementById("username").value = "";
-    }
-
-    function goHome() {
-      window.location.href = "index.html";
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${userName}_quiz_results.csv`;
+      link.click();
     }
   </script>
 </body>
